@@ -17,51 +17,72 @@
 
 <body>
 
-    <!-- Navbar  -->
-    <section class="container mx-auto w-full">
-        <!-- Larger screen -->
-        <nav class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden">
-            <ul class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer">
-                <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Home</a></li>
-                <li class="hover:text-[#17A600] cursor-pointer"><a href="#">About</a></li>
-                <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Menu</a></li>
-            </ul>
-            <div>
-                <img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" />
-            </div>
-            <div>
-                <ul class="flex text-lg text-[#874900]  font-medium items-center gap-10"">
-          <li class=" hover:text-[#17A600] cursor-pointer"><a href="#">Blog</a></li>
-                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Nav</a></li>
-                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Contact</a></li>
+    <main class="container mx-auto w-full">
+
+
+        <!-- Navbar  -->
+        <section class="">
+            <!-- Larger screen -->
+            <nav class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden">
+                <ul class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer">
+                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#home">Home</a></li>
+                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#about">About</a></li>
+                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#menu">Menu</a></li>
                 </ul>
-            </div>
-        </nav>
+                <div>
+                    <img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" />
+                </div>
+                <div>
+                    <ul class="flex text-lg text-[#874900]  font-medium items-center gap-10"">
+          <li class=" hover:text-[#17A600] cursor-pointer"><a href="#">Blog</a></li>
+                        <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Nav</a></li>
+                        <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- Mobile Screen Navbar  -->
-        <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden">
+            <!-- Mobile Screen Navbar  -->
+            <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden">
+                <div>
+                    <img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" />
+                </div>
+                <div class="flex items-center"><i class="fa-solid fa-bars text-[#874900] text-xl"></i></div>
+
+            </nav>
+        </section>
+
+        <!-- Hero Section  -->
+        <section class="my-4" id="home">
             <div>
-                <img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" />
+                <img src="./assets//hero.png" class="w-full hidden sm:block" alt="">
+                <img src="./assets//heroMob.png" class="w-full sm:hidden block" alt="">
             </div>
-            <div class="flex items-center"><i class="fa-solid fa-bars text-[#874900] text-xl"></i></div>
+        </section>
 
-        </nav>
-    </section>
 
-    <!-- Hero Section  -->
-    <section class="container mx-auto w-full my-4">
-        <div>
-            <img src="./assets//hero.png" class="w-full hidden sm:block" alt="">
-            <img src="./assets//heroMob.png" class="w-full sm:hidden block" alt="">
-        </div>
-        <!-- <div class="absolute inset-0 z-0">
-            <img src="./assets/heroImg.jpg" class="w-full h-screen object-cover rounded-md" alt="Background Image">
-        </div>
-        <div class="relative z-10 flex flex-col justify-center items-center h-full text-white">
-            <h2 class="text-4xl font-bold mb-4 ">NuTree</h2>
-            <!-- Additional text elements can be added here -->
-        </div> 
-    </section>
+        <!-- Banner section -->
+
+        <section class="w-full h-full sm:my-20 my-10 flex justify-center items-center">
+            <div class="flex lg:flex-row flex-col w-full justify-center gap-20 lg:gap-20 md:gap-10 items-center">
+                <div class="w-full sm:w-[400px] px-4">
+                    <h2 class="text-2xl sm:text-3xl font-semibold">WE PROVIDE YOU <span class="text-[#17A600]">SUPER</span></h2>
+                    <h2 class="text-2xl sm:text-3xl font-semibold"><span class="text-[#17A600]">QUALITY</span> SMOOTHIES</h2>
+                    <p class="sm:text-lg text-base  font-normal text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit veritatis ex Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <button class="bg-[#17A600] text-white px-4 py-2 rounded-md my-4 text-lg"><a href="#menu">View Menu</a></button>
+                </div>
+                <div class="flex  hover:rotate-17 transform duration-300 ">
+                    <img src="./assets/banner2.jpg" class="-left-4 w-32 h-56 sm:h-full md:w-64  rounded-lg origin-bottom-left drop-shadow-md rotate-12"  alt="banners">
+                    <img src="./assets/banner1.jpg" class="z-10 w-32 h-56 sm:h-full md:w-64  rounded-lg drop-shadow-md rotate-12" alt="banners">
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full h-full sm:my-20 my-10 flex justify-center items-center">
+
+        </section>
+
+    </main>
 </body>
 
 </html>
