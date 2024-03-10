@@ -1,210 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://kit.fontawesome.com/f0ed730e25.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/98a179a0c5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f0ed730e25.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>NuTree</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main class="container mx-auto w-full">
+      <!-- Navbar  -->
+      <section class="">
+        <!-- Larger screen -->
+        <nav
+          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
+        >
+          <ul
+            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+          >
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#home">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#menu">Menu</a>
+            </li>
+          </ul>
+          <div>
+            <img
+              src="./assets/logo1.png"
+              class="w-20 cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <ul
+              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+            >
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Blog</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Nav</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
+        <!-- Mobile Screen Navbar  -->
+        <nav
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+        >
+          <div>
+            <img
+              src="./assets/logo1.png"
+              class="w-20 cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div class="flex items-center">
+            <i class="fa-solid fa-bars text-[#874900] text-xl"></i>
+          </div>
+        </nav>
+      </section>
 
-        <!-- Navbar  -->
-        <section class="">
-            <!-- Larger screen -->
-            <nav class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden">
-                <ul class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer">
-                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#home">Home</a></li>
-                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#about">About</a></li>
-                    <li class="hover:text-[#17A600] cursor-pointer"><a href="#menu">Menu</a></li>
-                </ul>
-                <div>
-                    <img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" />
-                </div>
-                <div>
-                    <ul class="flex text-lg text-[#874900]  font-medium items-center gap-10"">
-          <li class=" hover:text-[#17A600] cursor-pointer"><a href="#">Blog</a></li>
-                        <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Nav</a></li>
-                        <li class="hover:text-[#17A600] cursor-pointer"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Mobile Screen Navbar  -->
-            <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden">
-                <div>
-                    <img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" />
-                </div>
-                <div class="flex items-center"><i class="fa-solid fa-bars text-[#874900] text-xl"></i></div>
-
-            </nav>
-        </section>
-
-        <!-- Hero Section  -->
-        <section class="my-4" id="home">
-            <div>
-                <img src="./assets//hero.png" class="w-full hidden sm:block" alt="">
-                <img src="./assets//heroMob.png" class="w-full sm:hidden block" alt="">
-            </div>
-        </section>
-
-
-        <!-- Banner section -->
-
-        <section class="w-full h-full sm:my-20 my-10 flex justify-center items-center">
-            <div class="flex lg:flex-row flex-col w-full justify-center gap-20 lg:gap-20 md:gap-10 items-center">
-                <div class="w-full sm:w-[400px] px-4">
-                    <h2 class="text-2xl sm:text-3xl font-semibold">WE PROVIDE YOU <span class="text-[#17A600]">SUPER</span></h2>
-                    <h2 class="text-2xl sm:text-3xl font-semibold"><span class="text-[#17A600]">QUALITY</span> SMOOTHIES</h2>
-                    <p class="sm:text-lg text-base  font-normal text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit veritatis ex Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <button class="bg-[#17A600] text-white px-4 py-2 rounded-md my-4 text-lg"><a href="#menu">View Menu</a></button>
-                </div>
-                <div class="flex  hover:rotate-17 transform duration-300 ">
-                    <img src="./assets/banner2.jpg" class="-left-4 w-32 h-56 sm:h-full md:w-64  rounded-lg origin-bottom-left drop-shadow-md rotate-12"  alt="banners">
-                    <img src="./assets/banner1.jpg" class="z-10 w-32 h-56 sm:h-full md:w-64  rounded-lg drop-shadow-md rotate-12" alt="banners">
-                </div>
-            </div>
-        </section>
-
-        <section class="w-full h-full sm:my-20 my-10 flex justify-center items-center ">
-
-        </section>
-         
-
-        <!------------ Menu ---------------->
-        <section>
-          <div class="">
-            <h1 class="flex justify-center text-6xl text-[#166534]">Smoothies <span class="text-6xl text-[#874900] "> & Juices</span></h1>
-            <p class="flex justify-center pt-3 pb-3">Smoothie demo Designed for you</p>
-              <div class="menu1 flex align-center justify-evenly ">
-              <div class="box1 h-96 w-72 white py-7 rounded-lg shadow-md">
-                   <img src="assets/menuimg.png" class="px-9 rounded-lg pb-2"  alt="">
-                   <h2 class="flex justify-center ">Name</h2>
-                   <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-              <div class="box2 h-96 w-72 white py-7 rounded-lg shadow-md ">
-                 <img src="assets/menuimg.png" class=" px-9 rounded-lg pb-2" alt="">
-                 <h2 class="flex justify-center ">Name</h2>
-                 <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-
-              <div class="box3 h-96 w-72 white py-7 rounded-lg shadow-md">
-                 <img src="assets/menuimg.png" class="px-9 rounded-lg pb-2" alt="">
-                 <h2 class="flex justify-center ">Name</h2>
-                 <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-
-              <div class="box4 h-96 w-72 white rounded-lg shadow-md">
-                 <img src="assets/menuimg.png" class=" px-9 rounded-lg pb-2"  alt="">
-                 <h2 class="flex justify-center ">Name</h2>
-                 <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-             </div> 
-
-             <div class="menu2 flex align-center justify-evenly mt-7">
-              <div class="box1 h-96 w-72 white py-7 rounded-lg shadow-md">
-                   <img src="assets/menuimg.png" class=" px-9 rounded-lg pb-2"  alt="">
-                   <h2 class="flex justify-center ">Name</h2>
-                   <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-              <div class="box2 h-96 w-72 white py-7 rounded-lg shadow-md">
-                 <img src="assets/menuimg.png" class=" px-9 rounded-lg pb-2" alt="">
-                 <h2 class="flex justify-center ">Name</h2>
-                 <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-
-              <div class="box3 h-96 w-72 white py-7 rounded-lg shadow-md">
-                 <img src="assets/menuimg.png" class=" px-9 rounded-lg pb-2" alt="">
-                 <h2 class="flex justify-center ">Name</h2>
-                 <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-
-              <div class="box4 h-96 w-72 white rounded-lg shadow-md">
-                 <img src="assets/menuimg.png" class="px-9 rounded-lg pb-2"  alt="">
-                 <h2 class="flex justify-center ">Name</h2>
-                 <div class="rating flex justify-center">
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                 </div>
-              </div>
-             </div> 
-         </div>
-     </section>
-
-     <!------------------- ABOUT-US --------------------->
-     <section>
-        <div class="about-us">
-            <h1 class="flex justify-center text-6xl pt-12 text-[#166534]">About <span class="text-[#874900]"> Us</span></h1>
-            <div class="abt-content flex justify-between pt-15">
-                 <div class="abt-img ml-72">
-                 <img src="assets/abt.jpg" class="rounded-lg h-72 w-96" alt="">
-                 </div>
-                 <div class="abt-text pl-72 text-2xl">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, cupiditate aut? Temporibus recusandae minus et sit. Atque, alias! Expedita, doloremque placeat voluptatum maxime nostrum ipsa illo voluptates quo excepturi tenetur.
-                    Quidem facere asperiores tempora ad! Nisi </p>
-                 </div>
-            </div>
+      <!-- Hero Section  -->
+      <section class="my-4" id="home">
+        <div>
+          <img src="./assets//hero.png" class="w-full hidden sm:block" alt="" />
+          <img
+            src="./assets//heroMob.png"
+            class="w-full sm:hidden block"
+            alt=""
+          />
         </div>
-     </section>
-    </main>
-</body>
+      </section>
 
+      <!-- Banner section -->
+
+      <section
+        class="w-full h-full sm:my-20 my-10 flex justify-center items-center"
+      >
+        <div
+          class="flex lg:flex-row flex-col w-full justify-center gap-20 lg:gap-20 md:gap-10 items-center"
+        >
+          <div class="w-full sm:w-[400px] px-4">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              WE PROVIDE YOU <span class="text-[#17A600]">SUPER</span>
+            </h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              <span class="text-[#17A600]">QUALITY</span> SMOOTHIES
+            </h2>
+            <p class="sm:text-lg text-base font-normal text-slate-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              suscipit veritatis ex Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+
+            <button
+              class="bg-[#drop-shadow-2xl] text-white px-4 py-2 rounded-md my-4 text-lg"
+            >
+              <a href="#menu">View Menu</a>
+            </button>
+          </div>
+          <div class="flex hover:rotate-17 transform duration-300">
+            <img
+              src="./assets/banner2.jpg"
+              class="-left-4 w-32 h-56 sm:h-full md:w-64 rounded-lg origin-bottom-left drop-shadow-md rotate-12"
+              alt="banners"
+            />
+            <img
+              src="./assets/banner1.jpg"
+              class="z-10 w-32 h-56 sm:h-full md:w-64 rounded-lg drop-shadow-md rotate-12"
+              alt="banners"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!------------ Menu ---------------->
+      <section class="my-4">
+        <div class="flex flex-col gap-10 justify-center">
+          <div>
+            <h1
+              class="flex justify-center font-medium text-3xl md:text-5xl text-[#166534]"
+            >
+              Smoothies <span class="text-[#874900]">&nbsp;& Juices</span>
+            </h1>
+            <p class="flex justify-center py-3 text-slate-400">
+              Smoothie demo Designed for you
+            </p>
+          </div>
+
+          <div
+            class="menu1 flex items-center flex-wrap gap-y-10 justify-evenly"
+          >
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="menu2"
+            class="menu2 transform duration-300 hidden sm:flex items-center flex-wrap gap-y-10 justify-evenly"
+          >
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+            <div
+              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
+            >
+              <img
+                src="assets/menuimg.png"
+                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
+                alt=""
+              />
+              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
+              <div class="rating text-[#166534]">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button
+              id="view-btn"
+              onclick="toggleView()"
+              class="view-more sm:hidden bg-[#17A600] rounded-md text-white px-4 py-2"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- ABOUT-US --------------------->
+      <section class="flex justify-center mx-4 h-full my-10">
+        <div class="about-us">
+          <h1
+            class="text-center text-3xl sm:text-5xl font-medium pt-12 text-[#166534] my-10"
+          >
+            About&nbsp;<span class="text-[#874900]">Us</span>
+          </h1>
+          <div
+            class="abt-content flex justify-center gap-10 flex-col md:flex-row items-center mt-10"
+          >
+            <div class="">
+              <img
+                src="assets/about2.png"
+                class="rounded-lg sm:w-96 w-72"
+                alt=""
+              />
+            </div>
+            <div class="text-lg sm:w-96 w-72">
+              <p class="text-lg font-medium text-[#874900] text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repudiandae, cupiditate aut? Temporibus recusandae minus et sit.
+                Atque, alias! Expedita, doloremque placeat voluptatum maxime
+                nostrum ipsa illo voluptates quo excepturi tenetur. Quidem
+                facere asperiores tempora ad! Nisi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
