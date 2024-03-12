@@ -1,4 +1,6 @@
 const viewMore = document.getElementById("view-btn");
+const category = document.getElementById("category");
+const hamburgerMenu = document.querySelector(".hamburger");
 
 const toggleView = () => {
   const menu2 = document.getElementById("menu2");
@@ -14,3 +16,14 @@ const toggleView = () => {
     console.log("Text changed to 'View More'");
   }
 };
+
+category.addEventListener("click", function () {
+  let dropdownMenu = document.querySelector(".dropdown-menu");
+  dropdownMenu.classList.toggle("hidden");
+  console.log("button toggled");
+});
+
+hamburgerMenu.addEventListener("click", () => {
+  let navbarToggler = document.querySelector(".navbar")
+  navbarToggler.classList.toggle("hidden")
+});
