@@ -41,10 +41,9 @@
               <a href="#about">Menu</a>
             </li>
             <li class="cursor-pointer">
-              <a href="#menu" id="category" class="hover:text-[#17A600]"
-                ><button class="hover:text-[#17A600]">
-                  Category <i class="fa-solid fa-caret-down"></i></button
-              ></a>
+              <button id="category" class="hover:text-[#17A600]">
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
 
               <div
                 class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
@@ -103,12 +102,19 @@
             />
           </div>
           <div class="flex items-center">
-            <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            <h2 id="icon1">
+              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            </h2>
+            <h2 id="icon2" class="hidden">
+              <i
+                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+              ></i>
+            </h2>
           </div>
         </nav>
 
         <div
-          class="bg-white w-screen h-screen hidden flex justify-center text-xl my-10 sm:hidden navbar transform duration-700"
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
         >
           <ul class="flex flex-col gap-4">
             <li class="hover:text-[#17A600] cursor-pointer">
@@ -118,12 +124,11 @@
               <a href="#about">Menu</a>
             </li>
             <li class="cursor-pointer">
-              <a href="#menu" id="category" class="hover:text-[#17A600]"
-                ><button class="hover:text-[#17A600]">
-                  Category <i class="fa-solid fa-caret-down"></i></button
-              ></a>
+              <button id="category2" class="hover:text-[#17A600]">
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
               <div
-                class="absolute z-10 flex flex-col bg-white py-2 hidden rounded-md gap-2 dropdown-menu"
+                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
               >
                 <a
                   href="#"
@@ -375,10 +380,10 @@
       </section>
 
       <!------------------- ABOUT-US --------------------->
-      <section class="flex justify-center mx-4 h-full my-10">
+      <section class="flex justify-center mx-4 sm:mx-0 h-full my-10">
         <div class="about-us">
           <h1
-            class="text-center text-3xl sm:text-5xl font-medium pt-12 text-[#166534] my-10"
+            class="text-center text-3xl sm:text-5xl font-medium text-[#166534]"
           >
             About&nbsp;<span class="text-[#874900]">Us</span>
           </h1>
