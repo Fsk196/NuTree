@@ -6,13 +6,21 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script
       src="https://kit.fontawesome.com/f0ed730e25.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://kit.fontawesome.com/98a179a0c5.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
 
@@ -21,6 +29,8 @@
       rel="stylesheet"
     />
     <title>NuTree</title>
+
+    <style></style>
   </head>
 
   <body>
@@ -165,8 +175,8 @@
           />
         </div>
       </section>
-      <!-- Banner section -->
 
+      <!-- Banner section -->
       <section
         class="w-full h-full sm:my-20 my-10 flex justify-center items-center"
       >
@@ -208,7 +218,7 @@
       </section>
 
       <!------------ Menu ---------------->
-      <section class="my-4">
+      <section class="my-4 bg-[#BFEA7C]">
         <div class="flex flex-col gap-10 justify-center">
           <div>
             <h1
@@ -241,7 +251,7 @@
                 <i class="fa fa-star-o"></i>
               </div>
             </div>
-            <div
+            <!-- <div
               class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
             >
               <img
@@ -257,7 +267,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
               </div>
-            </div>
+            </div> -->
             <div
               class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
             >
@@ -298,23 +308,6 @@
             id="menu2"
             class="menu2 transform duration-300 hidden sm:flex items-center flex-wrap gap-y-10 justify-evenly"
           >
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-              </div>
-            </div>
             <div
               class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
             >
@@ -410,8 +403,97 @@
         </div>
       </section>
 
-      <!-- footer -->
+      <!-- Review section -->
 
+      <section
+        class="my-10 sm:my-14 md:my-20 flex justify-center items-center relative"
+      >
+        <div
+          class="mySwiper w-[700px] flex justify-center overflow-hidden py-10"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center flex-col">
+              <h2 class="text-center text-2xl md:text-3xl">They Say</h2>
+              <p class="text-lg text-center font-thin text-slate-500 my-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                cupiditate, quos porro eaque accusantium exercitationem sit
+                impedit culpa debitis in!
+              </p>
+              <p class="text-xl text-center font-medium my-2">
+                Lena Richardson
+              </p>
+              <p class="text-center text-lg text-slate-400">Smoothie Lover</p>
+            </div>
+            <div class="swiper-slide flex justify-center flex-col">
+              <h2 class="text-center text-2xl md:text-3xl">They Say</h2>
+              <p class="text-lg text-center font-thin text-slate-500 my-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                cupiditate, quos porro eaque accusantium exercitationem sit
+                impedit culpa debitis in!
+              </p>
+              <p class="text-xl text-center font-medium my-2">
+                Lena Richardson
+              </p>
+              <p class="text-center text-lg text-slate-400">Smoothie Lover</p>
+            </div>
+            <div class="swiper-slide flex justify-center flex-col">
+              <h2 class="text-center text-2xl md:text-3xl">They Say</h2>
+              <p class="text-lg text-center font-thin text-slate-500 my-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                cupiditate, quos porro eaque accusantium exercitationem sit
+                impedit culpa debitis in!
+              </p>
+              <p class="text-xl text-center font-medium my-2">
+                Lena Richardson
+              </p>
+              <p class="text-center text-lg text-slate-400">Smoothie Lover</p>
+            </div>
+            <div class="swiper-slide flex justify-center flex-col">
+              <h2 class="text-center text-2xl md:text-3xl">They Say</h2>
+              <p class="text-lg text-center font-thin text-slate-500 my-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                cupiditate, quos porro eaque accusantium exercitationem sit
+                impedit culpa debitis in!
+              </p>
+              <p class="text-xl text-center font-medium my-2">
+                Lena Richardson
+              </p>
+              <p class="text-center text-lg text-slate-400">Smoothie Lover</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Signin Newsletter -->
+
+      <section
+        class="flex justify-between items-center max-lg:flex-col gap-10 my-10 sm:my-14 md:my-20"
+      >
+        <h3 class="text-4xl leading-[68px] lg:max-w-md">
+          Sign Up Form <span class="text-[#17A600]"> Updates</span> & Newsletter
+        </h3>
+
+        <div
+          class="flex flex-row py-2 px-2 border border-[#17A600] rounded-full sm:w-[400px] justify-between"
+        >
+          <input
+            type="text"
+            placeholder="subscribe@nutree.com"
+            class="focus:outline-none text-[#17A600]"
+          />
+          <div class="flex max-sm:justify-end items-center max-sm:w-full">
+            <button
+              label="Sign Up"
+              class="bg-[#17A600] px-3 py-2 rounded-full text-white"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
       <footer
         class="mx-auto bg-[#863A29] flex justify-center p-5 items-center flex-col text-white"
       >
@@ -513,6 +595,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>

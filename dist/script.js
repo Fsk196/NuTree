@@ -50,3 +50,11 @@ hamburgerMenu1.addEventListener("click", () => {
   let navbarToggler = document.querySelector(".navbar");
   navbarToggler.classList.toggle("hidden");
 });
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
