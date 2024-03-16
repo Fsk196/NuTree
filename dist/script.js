@@ -6,6 +6,7 @@ const hamburgerMenu1 = document.querySelector(".hamburger1");
 const icon1 = document.getElementById("icon1");
 const icon2 = document.getElementById("icon2");
 
+
 const toggleView = () => {
   const menu2 = document.getElementById("menu2");
   if (menu2.classList.contains("hidden")) {
@@ -58,3 +59,16 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+
+
+// Category Sript
+// script.js
+
+// const catBtns = document.querySelectorAll(".cat-btn");
+
+// catBtns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     btn.classList.add("active");
+//   });
+// });
