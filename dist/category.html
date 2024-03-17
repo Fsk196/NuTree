@@ -36,17 +36,22 @@
             class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
           >
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#home">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="#about">Menu</a>
             </li>
             <li class="cursor-pointer">
-              <button id="category" class="hover:text-[#17A600]">
-                Category <i class="fa-solid fa-caret-down"></i>
-              </button>
+              <a
+                href="./category.html"
+                id="category"
+                class="hover:text-[#17A600]"
+              >
+                <h2>Category</h2>
+                <!-- Category <i class="fa-solid fa-caret-down"></i> -->
+              </a>
 
-              <div
+              <!-- <div
                 class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
               >
                 <a
@@ -64,7 +69,7 @@
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Juices</a
                 >
-              </div>
+              </div> -->
             </li>
           </ul>
           <div>
@@ -119,34 +124,38 @@
         >
           <ul class="flex flex-col gap-4">
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#home">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="#about">Menu</a>
             </li>
             <li class="cursor-pointer">
-              <button id="category2" class="hover:text-[#17A600]">
-                Category <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <div
-                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+              <a
+                href="./category.html"
+                id="category2"
+                class="hover:text-[#17A600]"
               >
-                <a
-                  href="#smoothies"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Smoothies</a
-                >
-                <a
-                  href="#smoothie-bowl"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Smoothie Bowl</a
-                >
-                <a
-                  href="#juicesBtn"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Juices</a
-                >
-              </div>
+                Category
+              </a>
+              <!-- <div
+              class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+            >
+              <a
+                href="#"
+                class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                >Smoothies</a
+              >
+              <a
+                href="#"
+                class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                >Smoothie Bowl</a
+              >
+              <a
+                href="#"
+                class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                >Juices</a
+              >
+            </div> -->
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">Blog</li>
             <li class="hover:text-[#17A600] cursor-pointer">About Us</li>
@@ -157,39 +166,37 @@
 
       <!-- Hero section  -->
 
-      <section>
-        <!-- <div class="relative">
-          <img
-            src="./assets/cat-hero.jpg"
-            class="w-full h-lvh absolute -z-10"
-            alt=""
-          />
-        </div> -->
-        <div class="flex justify-center items-center py-10">
-          <h2 class="text-5xl font-semibold text-[#863A29]">OUR CATEGORIES</h2>
+      <section class="my-4">
+        <div class="">
+          <img src="./assets/cat-hero1.jpg" class="w-full rounded-md" alt="" />
         </div>
       </section>
 
       <!-- Category Section  -->
 
-      <section class="">
+      <section class="my-10">
+        <div class="flex justify-center items-center my-2">
+          <h2 class="text-4xl sm:text-5xl font-semibold text-[#863A29]">
+            OUR CATEGORIES
+          </h2>
+        </div>
         <!-- Buttons -->
         <div class="flex justify-center gap-4">
           <button
             id="smoothiesBtn"
-            class="cat-btn text-xl active text-[#17A600] hover:text-[#863A29] font-medium"
+            class="cat-btn sm:text-xl text-lg active text-[#17A600] hover:text-[#863A29] font-medium"
           >
             Smoothies
           </button>
           <button
             id="smoothieBowlBtn"
-            class="cat-btn text-xl text-[#17A600] hover:text-[#863A29] font-medium"
+            class="cat-btn sm:text-xl text-lg text-[#17A600] hover:text-[#863A29] font-medium"
           >
             Smoothie Bowl
           </button>
           <button
             id="juicesBtn"
-            class="cat-btn text-xl text-[#17A600] hover:text-[#863A29] font-medium"
+            class="cat-btn sm:text-xl text-lg text-[#17A600] hover:text-[#863A29] font-medium"
           >
             Juices
           </button>
@@ -198,9 +205,11 @@
         <!-- categories -->
         <!-- Smoothies -->
         <div id="smoothies" class="flex justify-center my-10">
-          <div class="flex flex-wrap gap-8 justify-center px-10">
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -208,8 +217,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -217,8 +226,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -226,8 +235,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -235,8 +244,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -244,8 +253,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -253,8 +262,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -262,8 +271,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -275,9 +284,11 @@
         </div>
         <!-- smoothie-bowl -->
         <div id="smoothie-bowl" class="flex justify-center my-10 hidden">
-          <div class="flex flex-wrap gap-8 justify-center px-10">
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -285,8 +296,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -294,8 +305,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -303,8 +314,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -312,8 +323,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -321,8 +332,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -330,8 +341,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -339,8 +350,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothie Bowl</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -352,9 +363,11 @@
         </div>
         <!-- juices -->
         <div id="juices" class="flex justify-center my-10 hidden">
-          <div class="flex flex-wrap gap-8 justify-center px-10">
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -362,8 +375,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -371,8 +384,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -380,8 +393,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -389,8 +402,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -398,8 +411,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -407,8 +420,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -416,8 +429,8 @@
                 </p>
               </div>
             </div>
-            <div class="w-64 rounded-md">
-              <img src="./assets/menuimg.png" class="" alt="menu" />
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -427,9 +440,109 @@
             </div>
           </div>
         </div>
-        <div class="hidden">Smoothie Bowl</div>
-        <div class="hidden">Juices</div>
       </section>
+
+      <!-- Footer -->
+      <footer
+        class="mx-auto bg-[#863A29] flex justify-center p-5 items-center flex-col text-white"
+      >
+        <div
+          id="top"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center"
+        >
+          <div class="flex flex-col gap-4">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Dont be shy, say HI!
+            </h2>
+            <div class="my-2 flex flex-col gap-2">
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-phone text-xl"></i></span>
+                0987654321
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-clock text-xl"></i></span>
+                Mon - Sat 10.00 - 10.00 Sunday CLOSED
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-location-dot text-xl"></i></span>
+                184 Main Collins Street West Victoria 8007
+              </h3>
+            </div>
+
+            <div id="socials" class="p-2">
+              <!----- socials------>
+              <h2 class="text-white text-3xl flex gap-4">
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+              </h2>
+            </div>
+          </div>
+
+          <div id="opening-hour" class="flex flex-col gap-3">
+            <h2 class="text-2xl sm:text-3xl font-semibold">Opening Hours</h2>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-base sm:text-lg">
+                Monday…………………………………..10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Tuesday…………………………………..10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Wednesday……………………………..10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Thursday…………………………………10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Friday………………………………………10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Saturday………………………………….10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Sunday…………………………………………….CLOSED
+              </h3>
+            </div>
+          </div>
+
+          <div id="footer-right" class="flex flex-col">
+            <h2 class="text-3xl font-semibold pt-3">Visit</h2>
+            <h3 class="text-xl pt-1">Menu</h3>
+            <h3 class="text-xl pt-1">Category</h3>
+            <h3 class="text-xl pt-1">About</h3>
+            <h3 class="text-xl pt-1">Blogs</h3>
+          </div>
+        </div>
+
+        <div id="copyright" class="flex items-center justify-center">
+          <p class="">
+            <span><i class="fa-regular fa-copyright"></i></span>
+            2024 Nutree Smoothies, All Rights Reserved
+          </p>
+        </div>
+      </footer>
     </main>
 
     <script>

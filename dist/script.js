@@ -22,16 +22,16 @@ const toggleView = () => {
   }
 };
 
-category.addEventListener("click", () => {
-  let dropdownMenu = document.querySelector(".dropdown-menu");
-  dropdownMenu.classList.toggle("hidden");
-  console.log("button toggled");
-});
+// category.addEventListener("click", () => {
+//   let dropdownMenu = document.querySelector(".dropdown-menu");
+//   dropdownMenu.classList.toggle("hidden");
+//   console.log("button toggled");
+// });
 
-category2.addEventListener("click", () => {
-  let dropdownMenu = document.querySelector(".subnav");
-  dropdownMenu.classList.toggle("hidden");
-});
+// category2.addEventListener("click", () => {
+//   let dropdownMenu = document.querySelector(".subnav");
+//   dropdownMenu.classList.toggle("hidden");
+// });
 
 icon1.addEventListener("click", () => {
   icon1.classList.add("hidden");

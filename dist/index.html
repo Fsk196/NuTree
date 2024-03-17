@@ -45,21 +45,26 @@
             class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
           >
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#home">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="#about">Menu</a>
             </li>
             <li class="cursor-pointer">
-              <button id="category" class="hover:text-[#17A600]">
-                Category <i class="fa-solid fa-caret-down"></i>
-              </button>
+              <a
+                href="./category.html"
+                id="category"
+                class="hover:text-[#17A600]"
+              >
+                <h2>Category</h2>
+                <!-- Category <i class="fa-solid fa-caret-down"></i> -->
+              </a>
 
-              <div
+              <!-- <div
                 class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
               >
                 <a
-                  href="#"
+                  href="./category.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Smoothies</a
                 >
@@ -73,7 +78,7 @@
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Juices</a
                 >
-              </div>
+              </div> -->
             </li>
           </ul>
           <div>
@@ -128,16 +133,20 @@
         >
           <ul class="flex flex-col gap-4">
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#home">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="#about">Menu</a>
             </li>
             <li class="cursor-pointer">
-              <button id="category2" class="hover:text-[#17A600]">
-                Category <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <div
+              <a
+                href="./category.html"
+                id="category2"
+                class="hover:text-[#17A600]"
+              >
+                Category
+              </a>
+              <!-- <div
                 class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
               >
                 <a
@@ -155,7 +164,7 @@
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Juices</a
                 >
-              </div>
+              </div> -->
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">Blog</li>
             <li class="hover:text-[#17A600] cursor-pointer">About Us</li>
@@ -218,7 +227,7 @@
       </section>
 
       <!------------ Menu ---------------->
-      <section class="my-4 bg-[#BFEA7C]">
+      <section class="my-10 py-4">
         <div class="flex flex-col gap-10 justify-center">
           <div>
             <h1
@@ -234,21 +243,31 @@
           <div
             class="menu1 flex items-center flex-wrap gap-y-10 justify-evenly"
           >
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
               </div>
             </div>
             <!-- <div
@@ -268,95 +287,37 @@
                 <i class="fa fa-star-o"></i>
               </div>
             </div> -->
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-              </div>
-            </div>
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-              </div>
-            </div>
           </div>
 
           <div
             id="menu2"
             class="menu2 transform duration-300 hidden sm:flex items-center flex-wrap gap-y-10 justify-evenly"
           >
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
               </div>
             </div>
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
               </div>
             </div>
-            <div
-              class="box1 h-96 w-72 bg-white py-10 rounded-lg drop-shadow-2xl flex justify-center items-center flex-col"
-            >
-              <img
-                src="assets/menuimg.png"
-                class="rounded-lg hover:transform hover:scale-75 duration-300 hover:skew-y-6 hover:drop-shadow-2xl"
-                alt=""
-              />
-              <h2 class="my-2 text-[#874900] text-xl font-medium">Name</h2>
-              <div class="rating text-[#166534]">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
               </div>
             </div>
           </div>
