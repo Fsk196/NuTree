@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/f0ed730e25.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>NuTree</title>
+  </head>
+  <body>
+    <main class="container mx-auto w-full">
+      <!-- navbar  -->
+      <section class="">
+        <!-- Larger screen -->
+        <nav
+          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
+        >
+          <ul
+            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+          >
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./aboutus.html">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category" class="hover:text-[#17A600]">
+                <!-- <h2>Category</h2> -->
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
+
+              <div
+                class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
+              >
+                <a
+                  href="./category/smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./category/smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./category/juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div>
+            <img
+              src="./assets/logo1.png"
+              class="w-20 cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <ul
+              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+            >
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Blog</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./aboutus.html">About Us</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile Screen Navbar  -->
+        <nav
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+        >
+          <div>
+            <img
+              src="./assets/logo1.png"
+              class="w-20 cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div class="flex items-center">
+            <h2 id="icon1">
+              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            </h2>
+            <h2 id="icon2" class="hidden">
+              <i
+                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+              ></i>
+            </h2>
+          </div>
+        </nav>
+
+        <div
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
+        >
+          <ul class="flex flex-col gap-4">
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#about">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category2" class="hover:text-[#17A600]">
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div
+                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+              >
+                <a
+                  href="./category/smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./category/smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./category/juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">Blog</li>
+            <li class="hover:text-[#17A600] cursor-pointer">About Us</li>
+            <li class="hover:text-[#17A600] cursor-pointer">Contact</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const viewMore = document.getElementById("view-btn");
+      const category = document.getElementById("category");
+      const category2 = document.getElementById("category2");
+      const hamburgerMenu = document.querySelector(".hamburger");
+      const hamburgerMenu1 = document.querySelector(".hamburger1");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
+
+      const toggleView = () => {
+        const menu2 = document.getElementById("menu2");
+        if (menu2.classList.contains("hidden")) {
+          menu2.classList.remove("hidden");
+          menu2.classList.add("flex");
+          viewMore.textContent = "View Less";
+          console.log("Text changed to 'View Less'");
+        } else {
+          menu2.classList.remove("flex");
+          menu2.classList.add("hidden");
+          viewMore.textContent = "View More";
+          console.log("Text changed to 'View More'");
+        }
+      };
+
+      category.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("hidden");
+        console.log("button toggled");
+      });
+
+      category2.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".subnav");
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      icon1.addEventListener("click", () => {
+        icon1.classList.add("hidden");
+        icon2.classList.remove("hidden");
+      });
+
+      icon2.addEventListener("click", () => {
+        icon1.classList.remove("hidden");
+        icon2.classList.add("hidden");
+      });
+
+      hamburgerMenu.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+      hamburgerMenu1.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

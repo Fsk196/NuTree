@@ -36,134 +36,134 @@
   <body>
     <main class="container mx-auto w-full">
       <!-- Navbar  -->
-      <section class="">
-        <!-- Larger screen -->
-        <nav
-          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
-        >
-          <ul
-            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+        <section class="">
+          <!-- Larger screen -->
+          <nav
+            class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
           >
-            <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="./index.html">Home</a>
-            </li>
-            <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#about">Menu</a>
-            </li>
-            <li class="cursor-pointer">
-              <button id="category" class="hover:text-[#17A600]">
-                <!-- <h2>Category</h2> -->
-                Category <i class="fa-solid fa-caret-down"></i>
-              </button>
-
-              <div
-                class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
-              >
-                <a
-                  href="./category/smoothies.html"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Smoothies</a
-                >
-                <a
-                  href="./category/smoothiebowl.html"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Smoothie Bowl</a
-                >
-                <a
-                  href="./category/juices.html"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Juices</a
-                >
-              </div>
-            </li>
-          </ul>
-          <div>
-            <img
-              src="./assets/logo1.png"
-              class="w-20 cursor-pointer"
-              alt="logo"
-            />
-          </div>
-          <div>
             <ul
-              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+              class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
             >
               <li class="hover:text-[#17A600] cursor-pointer">
-                <a href="#">Blog</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="hover:text-[#17A600] cursor-pointer">
-                <a href="#">About Us</a>
+                <a href="./aboutus.html">Menu</a>
               </li>
-              <li class="hover:text-[#17A600] cursor-pointer">
-                <a href="#">Contact</a>
+              <li class="cursor-pointer">
+                <button id="category" class="hover:text-[#17A600]">
+                  <!-- <h2>Category</h2> -->
+                  Category <i class="fa-solid fa-caret-down"></i>
+                </button>
+
+                <div
+                  class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
+                >
+                  <a
+                    href="./category/smoothies.html"
+                    class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                    >Smoothies</a
+                  >
+                  <a
+                    href="./category/smoothiebowl.html"
+                    class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                    >Smoothie Bowl</a
+                  >
+                  <a
+                    href="./category/juices.html"
+                    class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                    >Juices</a
+                  >
+                </div>
               </li>
             </ul>
-          </div>
-        </nav>
-
-        <!-- Mobile Screen Navbar  -->
-        <nav
-          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
-        >
-          <div>
-            <img
-              src="./assets/logo1.png"
-              class="w-20 cursor-pointer"
-              alt="logo"
-            />
-          </div>
-          <div class="flex items-center">
-            <h2 id="icon1">
-              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
-            </h2>
-            <h2 id="icon2" class="hidden">
-              <i
-                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
-              ></i>
-            </h2>
-          </div>
-        </nav>
-
-        <div
-          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
-        >
-          <ul class="flex flex-col gap-4">
-            <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="./index.html">Home</a>
-            </li>
-            <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#about">Menu</a>
-            </li>
-            <li class="cursor-pointer">
-              <button id="category2" class="hover:text-[#17A600]">
-                Category <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <div
-                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+            <div>
+              <img
+                src="./assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul
+                class="flex text-lg text-[#874900] font-medium items-center gap-10"
               >
-                <a
-                  href="./category/smoothies.html"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Smoothies</a
+                <li class="hover:text-[#17A600] cursor-pointer">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="hover:text-[#17A600] cursor-pointer">
+                  <a href="./aboutus.html">About Us</a>
+                </li>
+                <li class="hover:text-[#17A600] cursor-pointer">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Mobile Screen Navbar  -->
+          <nav
+            class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+          >
+            <div>
+              <img
+                src="./assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+              />
+            </div>
+            <div class="flex items-center">
+              <h2 id="icon1">
+                <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+              </h2>
+              <h2 id="icon2" class="hidden">
+                <i
+                  class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+                ></i>
+              </h2>
+            </div>
+          </nav>
+
+          <div
+            class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
+          >
+            <ul class="flex flex-col gap-4">
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#about">Menu</a>
+              </li>
+              <li class="cursor-pointer">
+                <button id="category2" class="hover:text-[#17A600]">
+                  Category <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div
+                  class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
                 >
-                <a
-                  href="./category/smoothiebowl.html"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Smoothie Bowl</a
-                >
-                <a
-                  href="./category/juices.html"
-                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
-                  >Juices</a
-                >
-              </div>
-            </li>
-            <li class="hover:text-[#17A600] cursor-pointer">Blog</li>
-            <li class="hover:text-[#17A600] cursor-pointer">About Us</li>
-            <li class="hover:text-[#17A600] cursor-pointer">Contact</li>
-          </ul>
-        </div>
-      </section>
+                  <a
+                    href="./category/smoothies.html"
+                    class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                    >Smoothies</a
+                  >
+                  <a
+                    href="./category/smoothiebowl.html"
+                    class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                    >Smoothie Bowl</a
+                  >
+                  <a
+                    href="./category/juices.html"
+                    class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                    >Juices</a
+                  >
+                </div>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">Blog</li>
+              <li class="hover:text-[#17A600] cursor-pointer">About Us</li>
+              <li class="hover:text-[#17A600] cursor-pointer">Contact</li>
+            </ul>
+          </div>
+        </section>
 
       <!-- Hero Section  -->
       <section class="my-4" id="home">
