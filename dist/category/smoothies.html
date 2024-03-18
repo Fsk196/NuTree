@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/f0ed730e25.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nutree</title>
+  </head>
+  <body>
+    <main class="container mx-auto w-full">
+      <!-- Navbar  -->
+      <section class="">
+        <!-- Larger screen -->
+        <nav
+          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
+        >
+          <ul
+            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+          >
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#about">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category" class="hover:text-[#17A600]">
+                <!-- <h2>Category</h2> -->
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
+
+              <div
+                class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
+              >
+                <a
+                  href="./smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div>
+            <img
+              src="../assets/logo1.png"
+              class="w-20 cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <ul
+              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+            >
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Blog</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">About Us</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile Screen Navbar  -->
+        <nav
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+        >
+          <div>
+            <img
+              src="../assets/logo1.png"
+              class="w-20 cursor-pointer"
+              alt="logo"
+            />
+          </div>
+          <div class="flex items-center">
+            <h2 id="icon1">
+              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            </h2>
+            <h2 id="icon2" class="hidden">
+              <i
+                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+              ></i>
+            </h2>
+          </div>
+        </nav>
+
+        <div
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
+        >
+          <ul class="flex flex-col gap-4">
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#about">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category2" class="hover:text-[#17A600]">
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div
+                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+              >
+                <a
+                  href="./smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">Blog</li>
+            <li class="hover:text-[#17A600] cursor-pointer">About Us</li>
+            <li class="hover:text-[#17A600] cursor-pointer">Contact</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Hero section  -->
+
+      <section class="my-4">
+        <div class="">
+          <img src="../assets/smoothies.jpg" class="w-full rounded-md" alt="" />
+        </div>
+      </section>
+
+      <!-- Category Section  -->
+
+      <section class="my-10">
+        <div class="flex justify-center items-center my-2">
+          <h2 class="text-4xl sm:text-5xl font-semibold text-[#863A29]">
+            OUR SMOOTHIES
+          </h2>
+        </div>
+        <!-- Buttons -->
+        <!-- <div class="flex justify-center gap-4">
+          <button
+            id="smoothiesBtn"
+            class="cat-btn sm:text-xl text-lg active text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Smoothies
+          </button>
+          <button
+            id="smoothieBowlBtn"
+            class="cat-btn sm:text-xl text-lg text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Smoothie Bowl
+          </button>
+          <button
+            id="juicesBtn"
+            class="cat-btn sm:text-xl text-lg text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Juices
+          </button>
+        </div> -->
+
+        <!-- categories -->
+        <!-- Smoothies -->
+        <div id="smoothies" class="flex justify-center my-10">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- smoothie-bowl -->
+        <!-- <div id="smoothie-bowl" class="flex justify-center my-10 hidden">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- juices -->
+        <!-- <div id="juices" class="flex justify-center my-10 hidden">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="../assets/menuimg" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Juices</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="mx-auto bg-[#863A29] flex justify-center p-5 items-center flex-col text-white"
+      >
+        <div
+          id="top"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center"
+        >
+          <div class="flex flex-col gap-4">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Dont be shy, say HI!
+            </h2>
+            <div class="my-2 flex flex-col gap-2">
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-phone text-xl"></i></span>
+                0987654321
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-clock text-xl"></i></span>
+                Mon - Sat 10.00 - 10.00 Sunday CLOSED
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-location-dot text-xl"></i></span>
+                184 Main Collins Street West Victoria 8007
+              </h3>
+            </div>
+
+            <div id="socials" class="p-2">
+              <!----- socials------>
+              <h2 class="text-white text-3xl flex gap-4">
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href=""
+                    ><i
+                      class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+              </h2>
+            </div>
+          </div>
+
+          <div id="opening-hour" class="flex flex-col gap-3">
+            <h2 class="text-2xl sm:text-3xl font-semibold">Opening Hours</h2>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-base sm:text-lg">
+                Monday…………………………………..10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Tuesday…………………………………..10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Wednesday……………………………..10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Thursday…………………………………10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Friday………………………………………10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Saturday………………………………….10: 00 – 10: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Sunday…………………………………………….CLOSED
+              </h3>
+            </div>
+          </div>
+
+          <div id="footer-right" class="flex flex-col">
+            <h2 class="text-3xl font-semibold pt-3">Visit</h2>
+            <h3 class="text-xl pt-1">Menu</h3>
+            <h3 class="text-xl pt-1">Category</h3>
+            <h3 class="text-xl pt-1">About</h3>
+            <h3 class="text-xl pt-1">Blogs</h3>
+          </div>
+        </div>
+
+        <div id="copyright" class="flex items-center justify-center">
+          <p class="">
+            <span><i class="fa-regular fa-copyright"></i></span>
+            2024 Nutree Smoothies, All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const catBtns = document.querySelectorAll(".cat-btn");
+      // buttons
+      const smoothiesBtn = document.getElementById("smoothiesBtn");
+      const smoothieBowlBtn = document.getElementById("smoothieBowlBtn");
+      const juicesBtn = document.getElementById("juicesBtn");
+      const category = document.getElementById("category");
+      const category2 = document.getElementById("category2");
+
+      const hamburgerMenu = document.querySelector(".hamburger");
+      const hamburgerMenu1 = document.querySelector(".hamburger1");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
+      // Categories
+      const smoothiesCat = document.getElementById("smoothies");
+      const smoothieBowl = document.getElementById("smoothie-bowl");
+      const juices = document.getElementById("juices");
+
+      catBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (document.querySelector(".active")) {
+            document.querySelector(".active").classList.remove("active");
+          }
+          btn.classList.add("active");
+        });
+      });
+
+      category.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("hidden");
+        console.log("button toggled");
+      });
+
+      category2.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".subnav");
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      icon1.addEventListener("click", () => {
+        icon1.classList.add("hidden");
+        icon2.classList.remove("hidden");
+      });
+
+      icon2.addEventListener("click", () => {
+        icon1.classList.remove("hidden");
+        icon2.classList.add("hidden");
+      });
+
+      hamburgerMenu.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+      hamburgerMenu1.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

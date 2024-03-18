@@ -6,7 +6,6 @@ const hamburgerMenu1 = document.querySelector(".hamburger1");
 const icon1 = document.getElementById("icon1");
 const icon2 = document.getElementById("icon2");
 
-
 const toggleView = () => {
   const menu2 = document.getElementById("menu2");
   if (menu2.classList.contains("hidden")) {
@@ -22,16 +21,16 @@ const toggleView = () => {
   }
 };
 
-// category.addEventListener("click", () => {
-//   let dropdownMenu = document.querySelector(".dropdown-menu");
-//   dropdownMenu.classList.toggle("hidden");
-//   console.log("button toggled");
-// });
+category.addEventListener("click", () => {
+  let dropdownMenu = document.querySelector(".dropdown-menu");
+  dropdownMenu.classList.toggle("hidden");
+  console.log("button toggled");
+});
 
-// category2.addEventListener("click", () => {
-//   let dropdownMenu = document.querySelector(".subnav");
-//   dropdownMenu.classList.toggle("hidden");
-// });
+category2.addEventListener("click", () => {
+  let dropdownMenu = document.querySelector(".subnav");
+  dropdownMenu.classList.toggle("hidden");
+});
 
 icon1.addEventListener("click", () => {
   icon1.classList.add("hidden");
@@ -59,8 +58,6 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-
 
 // Category Sript
 // script.js
