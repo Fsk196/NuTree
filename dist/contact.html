@@ -30,10 +30,11 @@
     />
     <title>NuTree</title>
   </head>
+
   <body>
-    <main class="container mx-auto w-full">
-      <!-- navbar  -->
-      <section class="">
+    <main class="container mx-auto">
+      <!-- Navbar -->
+      <section class="z-10">
         <!-- Larger screen -->
         <nav
           class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
@@ -101,7 +102,7 @@
 
         <!-- Mobile Screen Navbar  -->
         <nav
-          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden z-10"
         >
           <div>
             <a href="./index.html"
@@ -124,7 +125,7 @@
         </nav>
 
         <div
-          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden z-10"
         >
           <ul class="flex flex-col gap-4">
             <li class="hover:text-[#17A600] cursor-pointer">
@@ -170,60 +171,79 @@
         </div>
       </section>
 
-      <!-- About Us Section  -->
-      <section class="w-full my-4">
-        <h2 class="text-3xl font-medium text-center">About us</h2>
-        <div
-          class="flex justify-center flex-col sm:flex-row my-10 gap-10 items-center"
-        >
-          <div class="w-[250px] sm:w-[500px] flex justify-center flex-col">
-            <h2 class="text-2xl font-medium text-[#874900]">Text Heading</h2>
-            <p class="text-base font-medium text-slate-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              tempora accusantium animi blanditiis recusandae culpa possimus
-              nobis, unde eveniet reprehenderit? Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Quidem, libero.
-            </p>
-          </div>
-          <div>
-            <img src="./assets/about2.png" class="w-72 sm:w-96" alt="" />
-          </div>
+      <!-- Contact Page  -->
+      <section class="my-10">
+        <div class="contact-us my-10">
+          <h1
+            class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]"
+          >
+            Contact&nbsp;<span class="text-[#863A29]">Us</span>
+          </h1>
         </div>
 
-        <div class="p-4 bg-[#9BCF53]/50 flex justify-center">
-          <div class="">
-            <h2 class="text-3xl font-medium mb-3 text-[#874900]">
-              About the NuTree
-            </h2>
-            <p
-              class="text-left sm:w-[600px] w-80 text-base font-medium text-[#17A600]"
+        <div class="flex items-center justify-center h-full flex-col">
+          <div class="relative pb-8">
+            <input
+              type="text"
+              id="Name"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Name"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Name</label
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              nostrum et aliquid dicta excepturi molestiae nihil nisi sapiente
-              rem explicabo ipsum impedit dolor, ducimus velit esse, porro
-              assumenda consequatur, iusto dolore. Totam animi facere, aut
-              consequatur molestias illo expedita rerum. Perferendis esse error
-              dolorem! Deserunt fuga cumque ducimus sed maxime.
-            </p>
           </div>
-        </div>
+          <div class="relative pb-8">
+            <input
+              type="text"
+              id="Email"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Email"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Email</label
+            >
+          </div>
+          <div class="relative pb-8">
+            <input
+              type="text"
+              id="Contactno"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Contactno"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Contact no.</label
+            >
+          </div>
+          <div class="relative pb-8">
+            <input
+              type="text"
+              id="Feedback"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Feedback"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Feedback your opinion</label
+            >
+          </div>
 
-        <div class="py-5 flex justify-center items-center bg-[#9BCF53]/70">
-          <div class="sm:w-[600px] w-80">
-            <h2 class="text-3xl font-medium mb-3 text-[#874900]">
-              Founder's story
-            </h2>
-            <div>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Temporibus necessitatibus dicta saepe modi numquam tempora eum sit
-              quae ipsum veritatis sed, placeat, provident asperiores incidunt
-              iure ad reiciendis rerum! Facilis voluptates facere recusandae
-              ipsum sed quod saepe! Fuga quisquam aliquid, eius, culpa corporis
-              architecto ipsam pariatur vitae impedit aliquam qui!
-            </div>
-          </div>
+          <button
+            label="Submit"
+            class="bg-[#17A600] px-3 py-2 rounded-full text-white"
+          >
+            Submit
+          </button>
         </div>
       </section>
+
       <footer
         class="mx-auto bg-[#863A29] flex justify-center p-5 items-center flex-col text-white"
       >

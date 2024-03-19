@@ -5,6 +5,9 @@ const hamburgerMenu = document.querySelector(".hamburger");
 const hamburgerMenu1 = document.querySelector(".hamburger1");
 const icon1 = document.getElementById("icon1");
 const icon2 = document.getElementById("icon2");
+const banner = document.getElementById("banner");
+
+gsap.registerPlugin(MotionPathPlugin, ScrollToPlugin, TextPlugin);
 
 const toggleView = () => {
   const menu2 = document.getElementById("menu2");
@@ -20,6 +23,12 @@ const toggleView = () => {
     console.log("Text changed to 'View More'");
   }
 };
+
+gsap.to(banner, {
+  ease: "power1.inOut",
+  opacity: 1,
+  y: 0,
+});
 
 category.addEventListener("click", () => {
   let dropdownMenu = document.querySelector(".dropdown-menu");
