@@ -7,7 +7,13 @@ const icon1 = document.getElementById("icon1");
 const icon2 = document.getElementById("icon2");
 const banner = document.getElementById("banner");
 
-gsap.registerPlugin(MotionPathPlugin, ScrollToPlugin, TextPlugin);
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 const toggleView = () => {
   const menu2 = document.getElementById("menu2");
@@ -58,14 +64,6 @@ hamburgerMenu.addEventListener("click", () => {
 hamburgerMenu1.addEventListener("click", () => {
   let navbarToggler = document.querySelector(".navbar");
   navbarToggler.classList.toggle("hidden");
-});
-
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });
 
 // Category Sript
