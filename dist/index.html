@@ -418,9 +418,10 @@
 
         <div
           class="flex flex-row py-2 px-2 border border-[#17A600] rounded-full sm:w-[400px] justify-between"
-        >
+        ><form name="submit-to-google-sheet">
           <input
             type="text"
+            name="Email"
             placeholder="subscribe@nutree.com"
             class="focus:outline-none text-[#17A600]"
           />
@@ -432,6 +433,7 @@
               Sign Up
             </button>
           </div>
+          </form>
         </div>
       </section>
 
@@ -539,5 +541,16 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxuB4hllrws9z7zy0UlG8Xxq4QE5McZxjbcHmK-TH92WErlgIgP5vWjUxYV-XfVZ0mBnA/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
