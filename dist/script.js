@@ -5,7 +5,7 @@ const hamburgerMenu = document.querySelector(".hamburger");
 const hamburgerMenu1 = document.querySelector(".hamburger1");
 const icon1 = document.getElementById("icon1");
 const icon2 = document.getElementById("icon2");
-const banner = document.getElementById("banner");
+const banner = document.querySelectorAll(".banner");
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
@@ -29,12 +29,6 @@ const toggleView = () => {
     console.log("Text changed to 'View More'");
   }
 };
-
-gsap.to(banner, {
-  ease: "power1.inOut",
-  opacity: 1,
-  y: 0,
-});
 
 category.addEventListener("click", () => {
   let dropdownMenu = document.querySelector(".dropdown-menu");
@@ -65,14 +59,3 @@ hamburgerMenu1.addEventListener("click", () => {
   let navbarToggler = document.querySelector(".navbar");
   navbarToggler.classList.toggle("hidden");
 });
-
-// Category Sript
-// script.js
-
-// const catBtns = document.querySelectorAll(".cat-btn");
-
-// catBtns.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     btn.classList.add("active");
-//   });
-// });
