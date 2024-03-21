@@ -65,6 +65,97 @@
         </div>
       </nav>
 
+
+      <!-- Contact Page  -->
+      <section class="my-10">
+        <div class="contact-us my-10">
+          <form name="submit-to-google-sheet">
+          <h1
+            class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]"
+          >
+            Contact&nbsp;<span class="text-[#863A29]">Us</span>
+          </h1>
+        </div>
+
+        <div class="flex items-center justify-center h-full flex-col">
+          <div class="relative pb-8">
+            <input
+              type="text"
+              name = "name"
+              id="Name"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Name"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Name</label
+            >
+          </div>
+          <div class="relative pb-8">
+            <input
+              type="text"
+              name = "email"
+              id="Email"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Email"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Email</label
+            >
+          </div>
+          <div class="relative pb-8">
+            <input
+              type="text"
+              name="contactno"
+              id="Contactno"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Contactno"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Contact no.</label
+            >
+          </div>
+          <div class="relative pb-8">
+            <input
+              type="text"
+              name = "feedback"
+              id="Feedback"
+              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+              autocomplete="off"
+            />
+            <label
+              for="Feedback"
+              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+              >Feedback your opinion</label
+            >
+          </div>
+
+          <button
+            label="Submit"
+            class="bg-[#17A600] px-3 py-2 rounded-full text-white"
+          >
+            Submit
+          </button>
+          </form>
+        </div>
+      </section>
+
+      <footer
+        class="mx-auto bg-[#863A29] flex justify-center p-5 items-center flex-col text-white"
+      >
+        <div
+          id="top"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center"
+        >
+          <div class="flex flex-col gap-4">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Dont be shy, say HI!
+=======
       <!-- Mobile Screen Navbar  -->
       <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden z-10">
         <div>
@@ -280,6 +371,27 @@
       icon2.classList.remove("hidden");
     });
 
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbySvtmIigbjyO74Js_0AqtZ0KAvgBrbanAu6ThqWNWzcOQZUpnR1SCCDTElxzu5t82l/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
     icon2.addEventListener("click", () => {
       icon1.classList.remove("hidden");
       icon2.classList.add("hidden");
