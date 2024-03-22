@@ -63,99 +63,7 @@
             </li>
           </ul>
         </div>
-      </nav>
-
-
-      <!-- Contact Page  -->
-      <section class="my-10">
-        <div class="contact-us my-10">
-          <form name="submit-to-google-sheet">
-          <h1
-            class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]"
-          >
-            Contact&nbsp;<span class="text-[#863A29]">Us</span>
-          </h1>
-        </div>
-
-        <div class="flex items-center justify-center h-full flex-col">
-          <div class="relative pb-8">
-            <input
-              type="text"
-              name = "name"
-              id="Name"
-              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-              autocomplete="off"
-            />
-            <label
-              for="Name"
-              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-              >Name</label
-            >
-          </div>
-          <div class="relative pb-8">
-            <input
-              type="text"
-              name = "email"
-              id="Email"
-              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-              autocomplete="off"
-            />
-            <label
-              for="Email"
-              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-              >Email</label
-            >
-          </div>
-          <div class="relative pb-8">
-            <input
-              type="text"
-              name="contactno"
-              id="Contactno"
-              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-              autocomplete="off"
-            />
-            <label
-              for="Contactno"
-              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-              >Contact no.</label
-            >
-          </div>
-          <div class="relative pb-8">
-            <input
-              type="text"
-              name = "feedback"
-              id="Feedback"
-              class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-              autocomplete="off"
-            />
-            <label
-              for="Feedback"
-              class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-              >Feedback your opinion</label
-            >
-          </div>
-
-          <button
-            label="Submit"
-            class="bg-[#17A600] px-3 py-2 rounded-full text-white"
-          >
-            Submit
-          </button>
-          </form>
-        </div>
-      </section>
-
-      <footer
-        class="mx-auto bg-[#863A29] flex justify-center p-5 items-center flex-col text-white"
-      >
-        <div
-          id="top"
-          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center"
-        >
-          <div class="flex flex-col gap-4">
-            <h2 class="text-2xl sm:text-3xl font-semibold">
-              Dont be shy, say HI!
-=======
+      </nav>   
       <!-- Mobile Screen Navbar  -->
       <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden z-10">
         <div>
@@ -207,6 +115,7 @@
     <!-- Contact Page  -->
     <section class="my-10">
       <div class="contact-us my-10">
+        <form name="submit-to-google-sheet">
         <h1 class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]">
           Contact&nbsp;<span class="text-[#863A29]">Us</span>
         </h1>
@@ -214,21 +123,21 @@
 
       <div class="flex items-center justify-center h-full flex-col">
         <div class="relative pb-8">
-          <input type="text" id="Name"
+          <input type="text" name = "name"  id="Name" 
             class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
             autocomplete="off" />
           <label for="Name"
             class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Name</label>
         </div>
         <div class="relative pb-8">
-          <input type="text" id="Email"
+          <input type="text" name = "email"  id="Email"
             class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
             autocomplete="off" />
           <label for="Email"
             class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Email</label>
         </div>
         <div class="relative pb-8">
-          <input type="text" id="Contactno"
+          <input type="text" name= "contactno" id="Contactno"
             class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
             autocomplete="off" />
           <label for="Contactno"
@@ -236,7 +145,7 @@
             no.</label>
         </div>
         <div class="relative pb-8">
-          <input type="text" id="Feedback"
+          <input type="text" name="feeedback" id="Feedback"
             class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
             autocomplete="off" />
           <label for="Feedback"
@@ -244,10 +153,14 @@
             your opinion</label>
         </div>
 
-        <button label="Submit" class="bg-[#17A600] px-3 py-2 rounded-full text-white">
+        <button label="Submit" class="bg-[#17A600] px-3 py-2 rounded-full text-white ">
           Submit
         </button>
+      </form>
       </div>
+      <span id="msg" 
+      class="flex justify-center items-center mt-4 text-xl text-[#863A29] display-block">
+      </span>
     </section>
 
     <!-- footer -->
@@ -260,7 +173,7 @@
           <div class="my-2 flex flex-col gap-2">
             <h3 class="text-1xl flex gap-3">
               <span><i class="fa-solid fa-phone text-xl"></i></span>
-              0987654321
+              9324999109
             </h3>
             <h3 class="text-1xl flex gap-3">
               <span><i class="fa-solid fa-clock text-xl"></i></span>
@@ -268,16 +181,17 @@
             </h3>
             <h3 class="text-1xl flex gap-3">
               <span><i class="fa-solid fa-location-dot text-xl"></i></span>
-              184 Main Collins Street West Victoria 8007
+              Shop no.3, Nityanand baug society, opp Navbharat apartment,<br>
+              Mahul road, Chembur (E) Mumbai 400074
             </h3>
           </div>
 
           <div id="socials" class="p-2">
             <!----- socials------>
             <h2 class="text-white text-3xl flex gap-4">
-              <span><a href=""><i
+              <span><a href="https://www.instagram.com/nutreesmoothies/"><i
                     class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href=""><i
+              <span><a href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"><i
                     class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"></i></a></span>
               <span><a href=""><i
                     class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"></i></a></span>
@@ -371,27 +285,6 @@
       icon2.classList.remove("hidden");
     });
 
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbySvtmIigbjyO74Js_0AqtZ0KAvgBrbanAu6ThqWNWzcOQZUpnR1SCCDTElxzu5t82l/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-  </body>
-</html>
     icon2.addEventListener("click", () => {
       icon1.classList.remove("hidden");
       icon2.classList.add("hidden");
@@ -414,6 +307,34 @@
       },
     });
   </script>
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbySvtmIigbjyO74Js_0AqtZ0KAvgBrbanAu6ThqWNWzcOQZUpnR1SCCDTElxzu5t82l/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "We got your response!!!"
+            setTimeout(() => {
+              msg.innerHTML = ' '
+            },4000);
+            form.reset()
+          })
+          
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
 </body>
 
 </html>
