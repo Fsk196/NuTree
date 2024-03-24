@@ -1,57 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="output.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Swiper js -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script
+      src="https://kit.fontawesome.com/f0ed730e25.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
 
-  <script src="https://kit.fontawesome.com/f0ed730e25.js" crossorigin="anonymous" defer></script>
-  <script src="https://kit.fontawesome.com/98a179a0c5.js" crossorigin="anonymous" defer></script>
-  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>NuTree</title>
+  </head>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <title>NuTree</title>
-</head>
+  <body>
+    <main class="container mx-auto w-full">
+      <!-- navbar  -->
+      <section class="">
+        <!-- Larger screen -->
+        <nav
+          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
+        >
+          <ul
+            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+          >
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./aboutus.html">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category" class="hover:text-[#17A600]">
+                <!-- <h2>Category</h2> -->
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
 
-<body>
-  <main class="container mx-auto w-full">
-    <!-- navbar  -->
-    <section class="">
-      <!-- Larger screen -->
-      <nav class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden">
-        <ul class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer">
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./aboutus.html">Menu</a>
-          </li>
-          <li class="cursor-pointer">
-            <button id="category" class="hover:text-[#17A600]">
-              <!-- <h2>Category</h2> -->
-              Category <i class="fa-solid fa-caret-down"></i>
-            </button>
+              <div
+                class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
+              >
+                <a
+                  href="./category/smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./category/smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./category/juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div>
+            <a href="./index.html"
+              ><img
+                src="./assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <ul
+              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+            >
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./aboutus.html">About Us</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-            <div class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu">
-              <a href="./category/smoothies.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothies</a>
-              <a href="./category/smoothiebowl.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothie
-                Bowl</a>
-              <a href="./category/juices.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Juices</a>
-            </div>
-          </li>
-        </ul>
-        <div>
-          <a href="./index.html"><img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" /></a>
-        </div>
-        <div>
-          <ul class="flex text-lg text-[#874900] font-medium items-center gap-10">
+        <!-- Mobile Screen Navbar  -->
+        <nav
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+        >
+          <div>
+            <a href="./index.html"
+              ><img
+                src="./assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <h2 id="icon1">
+              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            </h2>
+            <h2 id="icon2" class="hidden">
+              <i
+                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+              ></i>
+            </h2>
+          </div>
+        </nav>
+
+        <div
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
+        >
+          <ul class="flex flex-col gap-4 text-center">
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#about">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category2" class="hover:text-[#17A600]">
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div
+                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+              >
+                <a
+                  href="./category/smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./category/smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./category/juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="./blog.html">Blog</a>
             </li>
@@ -63,284 +169,223 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </section>
 
-      <!-- Mobile Screen Navbar  -->
-      <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden">
-        <div>
-          <a href="./index.html"><img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" /></a>
-        </div>
-        <div class="flex items-center">
-          <h2 id="icon1">
-            <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+      <!-- About Us Section  -->
+      <section class="my-4">
+        <h1 class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]">
+          About&nbsp;<span class="text-[#863A29]">Us</span>
+        </h1>
+        <div class="py-5 flex justify-center items-center flex-col">
+          <h2 class="text-3xl font-medium text-[#874900] gap-10 pb-10">
+            Our Story
           </h2>
-          <h2 id="icon2" class="hidden">
-            <i class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"></i>
-          </h2>
-        </div>
-      </nav>
+          <p
+            class="text-base font-medium text-slate-600 sm:w-[600px] w-80 px-2"
+          >
+            Nù-tree's adventure began with a late-night conversation during the
+            COVID-19 shutdown with my brother about how certain brands deceive
+            innocent people by making bogus health claims. How large fruit juice
+            brands use preserved fruit concentrates instead of real fruits mixed
+            with water, added sugars, preservatives, and even thickening agents
+            to bring aesthetics to their junk food and promote it as "healthy";
+            how parents are tricked into purchasing healthy drinks for their
+            children that have namesake nutritional values but are actually
+            laden with sorbent amounts of unhealthy sugars.
+            <br />
+            <br />
+            Then came the simple realization that, even if people did want to
+            drink healthy juices, there weren't many guilt-free options
+            available. Even the neighborhood juice stand, where people go after
+            work or gym or on a hot summer afternoon, was forcing people to buy
+            juices that contained harmful bacteria, powdered sugar, masalas, and
+            even contaminated ice. This is effectively destroying the concept of
+            a healthy drink. This forced us to consider creating a healthy
+            business that is also viable by offering reasonably priced smoothie
+            bowls, smoothie drinks, juices, and better alternatives for tea and
+            coffee.
+            <br /><br />
 
-      <div
-        class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden">
-        <ul class="flex flex-col gap-4">
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="#about">Menu</a>
-          </li>
-          <li class="cursor-pointer">
-            <button id="category2" class="hover:text-[#17A600]">
-              Category <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500">
-              <a href="./category/smoothies.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothies</a>
-              <a href="./category/smoothiebowl.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothie
-                Bowl</a>
-              <a href="./category/juices.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Juices</a>
-            </div>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./aboutus.html">About Us</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- About Us Section  -->
-    <section class="w-[50%] my-4">
-      <h1 class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]">
-        About&nbsp;<span class="text-[#863A29]">Us</span>
-      </h1>
-      <div class="py-5 flex justify-center items-center flex-col" >
-        <h2 class="text-3xl font-medium text-[#874900] gap-10 pb-10">Our Story</h2>
-        <p class="text-base font-medium text-slate-600 sm:w-[600px] w-80">
-
-          Nù-tree's adventure began with a late-night conversation during the COVID-19 shutdown with my brother about
-          how certain brands deceive innocent people by making bogus health claims. How large fruit juice brands use
-          preserved fruit concentrates instead of real fruits mixed with water, added sugars, preservatives, and even
-          thickening agents to bring aesthetics to their junk food and promote it as "healthy"; how parents are tricked
-          into purchasing healthy drinks for their children that have namesake nutritional values but are actually laden
-          with sorbent amounts of unhealthy sugars.
-          <br>
-          <br>
-          Then came the simple realization that, even if people did want to drink healthy juices, there weren't many
-          guilt-free options available. Even the neighborhood juice stand, where people go after work or gym or on a hot
-          summer afternoon, was forcing people to buy juices that contained harmful bacteria, powdered sugar, masalas,
-          and even contaminated ice. This is effectively destroying the concept of a healthy drink. This forced us to
-          consider creating a healthy business that is also viable by offering reasonably priced smoothie bowls,
-          smoothie drinks, juices, and better alternatives for tea and coffee.
-          <br><br>
-
-          Originally envisioned as the first QSR cafe in India, Nú-tree was built on the principles of promoting
-          nutritious drinks that can serve as a full meal by selecting only seasonal fruits and vegetables,
-          micronutrient-rich nuts and seeds, and incorporating superfoods like spirulina, matcha, blue tea, and coffee
-          into Indians' daily diets. According to the World Health Organization, over 50% of Indians do not regularly
-          consume a balanced diet that contains all the necessary macro and micronutrients, making the country the
-          world's capital of diabetes, obesity, and malnutrition.
-          <br>
-          <br>
-          Thus, Nú-tree smoothie café aims to provide novel tastes and combinations to Indians, bringing about a shift
-          in lifestyle by procuring fruits from all over the world.
-
-        </p>
-
-      </div>
-
-      <!-- <div class="flex justify-center flex-col sm:flex-row my-10 gap-10 items-center">
-        <div class="w-[250px] sm:w-[500px] flex justify-center flex-col">
-          <h2 class="text-2xl font-medium text-[#874900]">Nutree</h2>
-          <p class="text-base font-medium text-slate-600">
-            Nú-tree smoothie café aims to provide novel tastes and combinations to Indians, bringing about a shift in lifestyle by procuring fruits from all over the world.
+            Originally envisioned as the first QSR cafe in India, Nú-tree was
+            built on the principles of promoting nutritious drinks that can
+            serve as a full meal by selecting only seasonal fruits and
+            vegetables, micronutrient-rich nuts and seeds, and incorporating
+            superfoods like spirulina, matcha, blue tea, and coffee into
+            Indians' daily diets. According to the World Health Organization,
+            over 50% of Indians do not regularly consume a balanced diet that
+            contains all the necessary macro and micronutrients, making the
+            country the world's capital of diabetes, obesity, and malnutrition.
+            <br />
+            <br />
+            Thus, Nú-tree smoothie café aims to provide novel tastes and
+            combinations to Indians, bringing about a shift in lifestyle by
+            procuring fruits from all over the world.
           </p>
         </div>
-        <div>
-          <img src="./assets/about2.png" class="w-72 sm:w-96" alt="" />
-        </div>
-      </div>
 
-      <div class="p-4 bg-[#9BCF53]/50 flex justify-center">
-        <div class="">
-          <h2 class="text-3xl font-medium mb-3 text-[#874900]">
-            About the NuTree
-          </h2>
-          <p class="text-left sm:w-[600px] w-80 text-base font-medium text-[#17A600]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nostrum et aliquid dicta excepturi molestiae nihil nisi sapiente
-            rem explicabo ipsum impedit dolor, ducimus velit esse, porro
-            assumenda consequatur, iusto dolore. Totam animi facere, aut
-            consequatur molestias illo expedita rerum. Perferendis esse error
-            dolorem! Deserunt fuga cumque ducimus sed maxime.
-          </p>
-        </div>
-      </div>
-
-      <div class="py-5 flex justify-center items-center bg-[#9BCF53]/70">
-        <div class="sm:w-[600px] w-80">
-          <h2 class="text-3xl font-medium mb-3 text-[#874900]">
-            Founder's story
-          </h2>
-          <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Temporibus necessitatibus dicta saepe modi numquam tempora eum sit
-            quae ipsum veritatis sed, placeat, provident asperiores incidunt
-            iure ad reiciendis rerum! Facilis voluptates facere recusandae
-            ipsum sed quod saepe! Fuga quisquam aliquid, eius, culpa corporis
-            architecto ipsam pariatur vitae impedit aliquam qui!
-          </div>
-        </div>
-      </div> -->
-    </section>
-    <!-- footer -->
-    <footer class="mx-auto bg-[#863A29] flex justify-center items-center flex-col text-white">
-      <div id="top" class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center">
-        <div class="flex flex-col gap-4">
-          <h2 class="text-2xl sm:text-3xl font-semibold">
-            Dont be shy, say HI!
-          </h2>
-          <div class="my-2 flex flex-col gap-2">
-            <h3 class="text-1xl flex gap-3">
-              <span><i class="fa-solid fa-phone text-xl"></i></span>
-              9324999109
-            </h3>
-            <h3 class="text-1xl flex gap-3">
-              <span><i class="fa-solid fa-clock text-xl"></i></span>
-              Mon - Sat 10.00 - 10.00 Sunday CLOSED
-            </h3>
-            <h3 class="text-1xl flex gap-3">
-              <span><i class="fa-solid fa-location-dot text-xl"></i></span>
-              Shop no.3, Nityanand baug society, opp Navbharat apartment,<br>
-              Mahul road, Chembur (E) Mumbai 400074
-            </h3>
-          </div>
-
-          <div id="socials" class="p-2">
-            <!----- socials------>
-            <h2 class="text-white text-3xl flex gap-4">
-              <span><a href="https://www.instagram.com/nutreesmoothies/"><i
-                    class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"><i
-                    class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href=""><i
-                    class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href=""><i
-                    class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"></i></a></span>
+      </section>
+      <!-- footer -->
+      <footer
+        class="mx-auto bg-[#863A29] flex justify-center items-center flex-col text-white"
+      >
+        <div
+          id="top"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center items-center"
+        >
+          <div class="flex flex-col gap-4 justify-center items-center px-2">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Dont be shy, say HI!
             </h2>
+            <div class="my-2 flex flex-col gap-2">
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-phone text-xl"></i></span>
+                9324999109
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-clock text-xl"></i></span>
+                Mon - Sat 10.00 - 10.00 Sunday CLOSED
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-location-dot text-xl"></i></span>
+                <a href="https://maps.app.goo.gl/hWzg3GHBgNN5bSLNA"
+                  >Shop no.3, Nityanand baug society, opp Navbharat
+                  apartment,<br />
+                  Mahul road, Chembur (E) Mumbai 400074</a
+                >
+              </h3>
+            </div>
+
+            <div id="socials" class="p-2">
+              <!----- socials------>
+              <h2 class="text-white text-3xl flex gap-4">
+                <span
+                  ><a href="https://www.instagram.com/nutreesmoothies/"
+                    ><i
+                      class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a
+                    href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href="https://wa.me/9324999109"
+                    ><i
+                      class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+              </h2>
+            </div>
+          </div>
+
+          <div id="opening-hour" class="flex flex-col gap-3">
+            <h2 class="text-2xl sm:text-3xl font-semibold">Opening Hours</h2>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-base sm:text-lg">
+                Monday…………………………………..10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Tuesday…………………………………..10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Wednesday……………………………..10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Thursday…………………………………10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Friday………………………………………10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Saturday………………………………….10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Sunday…………………………………………….CLOSED
+              </h3>
+            </div>
+          </div>
+
+          <div id="footer-right" class="flex-col flex items-center">
+            <h2 class="text-3xl font-semibold">Get in touch</h2>
+            <h3 class="text-xl pt-1">Contact us</h3>
+            <h3 class="text-xl pt-1">About</h3>
+            <h3 class="text-xl pt-1">Blogs</h3>
           </div>
         </div>
 
-        <div id="opening-hour" class="flex flex-col gap-3">
-          <h2 class="text-2xl sm:text-3xl font-semibold">Opening Hours</h2>
-          <div class="flex flex-col gap-2">
-            <h3 class="text-base sm:text-lg">
-              Monday…………………………………..10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Tuesday…………………………………..10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Wednesday……………………………..10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Thursday…………………………………10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Friday………………………………………10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Saturday………………………………….10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Sunday…………………………………………….CLOSED
-            </h3>
-          </div>
+        <div id="copyright" class="flex items-center justify-center">
+          <p class="">
+            <span><i class="fa-regular fa-copyright"></i></span>
+            2024 Nutree Smoothies, All Rights Reserved
+          </p>
         </div>
+      </footer>
+    </main>
 
-        <div id="footer-right" class="flex-col flex items-center">
-          <h2 class="text-3xl font-semibold">Get in touch</h2>
-          <h3 class="text-xl pt-1">Contact us</h3>
-          <h3 class="text-xl pt-1">About</h3>
-          <h3 class="text-xl pt-1">Blogs</h3>
-        </div>
-      </div>
+    <script>
+      const viewMore = document.getElementById("view-btn");
+      const category = document.getElementById("category");
+      const category2 = document.getElementById("category2");
+      const hamburgerMenu = document.querySelector(".hamburger");
+      const hamburgerMenu1 = document.querySelector(".hamburger1");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
 
-      <div id="copyright" class="flex items-center justify-center">
-        <p class="">
-          <span><i class="fa-regular fa-copyright"></i></span>
-          2024 Nutree Smoothies, All Rights Reserved
-        </p>
-      </div>
-    </footer>
-  </main>
+      const toggleView = () => {
+        const menu2 = document.getElementById("menu2");
+        if (menu2.classList.contains("hidden")) {
+          menu2.classList.remove("hidden");
+          menu2.classList.add("flex");
+          viewMore.textContent = "View Less";
+          console.log("Text changed to 'View Less'");
+        } else {
+          menu2.classList.remove("flex");
+          menu2.classList.add("hidden");
+          viewMore.textContent = "View More";
+          console.log("Text changed to 'View More'");
+        }
+      };
 
-  <script>
-    const viewMore = document.getElementById("view-btn");
-    const category = document.getElementById("category");
-    const category2 = document.getElementById("category2");
-    const hamburgerMenu = document.querySelector(".hamburger");
-    const hamburgerMenu1 = document.querySelector(".hamburger1");
-    const icon1 = document.getElementById("icon1");
-    const icon2 = document.getElementById("icon2");
+      category.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("hidden");
+        console.log("button toggled");
+      });
 
-    const toggleView = () => {
-      const menu2 = document.getElementById("menu2");
-      if (menu2.classList.contains("hidden")) {
-        menu2.classList.remove("hidden");
-        menu2.classList.add("flex");
-        viewMore.textContent = "View Less";
-        console.log("Text changed to 'View Less'");
-      } else {
-        menu2.classList.remove("flex");
-        menu2.classList.add("hidden");
-        viewMore.textContent = "View More";
-        console.log("Text changed to 'View More'");
-      }
-    };
+      category2.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".subnav");
+        dropdownMenu.classList.toggle("hidden");
+      });
 
-    category.addEventListener("click", () => {
-      let dropdownMenu = document.querySelector(".dropdown-menu");
-      dropdownMenu.classList.toggle("hidden");
-      console.log("button toggled");
-    });
+      icon1.addEventListener("click", () => {
+        icon1.classList.add("hidden");
+        icon2.classList.remove("hidden");
+      });
 
-    category2.addEventListener("click", () => {
-      let dropdownMenu = document.querySelector(".subnav");
-      dropdownMenu.classList.toggle("hidden");
-    });
+      icon2.addEventListener("click", () => {
+        icon1.classList.remove("hidden");
+        icon2.classList.add("hidden");
+      });
 
-    icon1.addEventListener("click", () => {
-      icon1.classList.add("hidden");
-      icon2.classList.remove("hidden");
-    });
+      hamburgerMenu.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+      hamburgerMenu1.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
 
-    icon2.addEventListener("click", () => {
-      icon1.classList.remove("hidden");
-      icon2.classList.add("hidden");
-    });
-
-    hamburgerMenu.addEventListener("click", () => {
-      let navbarToggler = document.querySelector(".navbar");
-      navbarToggler.classList.toggle("hidden");
-    });
-    hamburgerMenu1.addEventListener("click", () => {
-      let navbarToggler = document.querySelector(".navbar");
-      navbarToggler.classList.toggle("hidden");
-    });
-
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-</body>
-
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
