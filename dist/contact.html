@@ -1,57 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="output.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Swiper js -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script
+      src="https://kit.fontawesome.com/f0ed730e25.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
 
-  <script src="https://kit.fontawesome.com/f0ed730e25.js" crossorigin="anonymous" defer></script>
-  <script src="https://kit.fontawesome.com/98a179a0c5.js" crossorigin="anonymous" defer></script>
-  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>NuTree</title>
+  </head>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <title>NuTree</title>
-</head>
+  <body>
+    <main class="container mx-auto">
+      <!-- Navbar -->
+      <section class="z-10">
+        <!-- Larger screen -->
+        <nav
+          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
+        >
+          <ul
+            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+          >
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./aboutus.html">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category" class="hover:text-[#17A600]">
+                <!-- <h2>Category</h2> -->
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
 
-<body>
-  <main class="container mx-auto">
-    <!-- Navbar -->
-    <section class="z-10">
-      <!-- Larger screen -->
-      <nav class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden">
-        <ul class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer">
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./aboutus.html">Menu</a>
-          </li>
-          <li class="cursor-pointer">
-            <button id="category" class="hover:text-[#17A600]">
-              <!-- <h2>Category</h2> -->
-              Category <i class="fa-solid fa-caret-down"></i>
-            </button>
+              <div
+                class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
+              >
+                <a
+                  href="./category/smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./category/smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./category/juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div>
+            <a href="./index.html"
+              ><img
+                src="./assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <ul
+              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+            >
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./aboutus.html">About Us</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Mobile Screen Navbar  -->
+        <nav
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden z-10"
+        >
+          <div>
+            <a href="./index.html"
+              ><img
+                src="./assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <h2 id="icon1">
+              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            </h2>
+            <h2 id="icon2" class="hidden">
+              <i
+                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+              ></i>
+            </h2>
+          </div>
+        </nav>
 
-            <div class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu">
-              <a href="./category/smoothies.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothies</a>
-              <a href="./category/smoothiebowl.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothie
-                Bowl</a>
-              <a href="./category/juices.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Juices</a>
-            </div>
-          </li>
-        </ul>
-        <div>
-          <a href="./index.html"><img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" /></a>
-        </div>
-        <div>
-          <ul class="flex text-lg text-[#874900] font-medium items-center gap-10">
+        <div
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden z-10"
+        >
+          <ul class="flex flex-col gap-4 text-center">
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="#about">Menu</a>
+            </li>
+            <li class="cursor-pointer">
+              <button id="category2" class="hover:text-[#17A600]">
+                Category <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div
+                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+              >
+                <a
+                  href="./category/smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./category/smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./category/juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+              </div>
+            </li>
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="./blog.html">Blog</a>
             </li>
@@ -63,59 +168,12 @@
             </li>
           </ul>
         </div>
-      </nav>   
-      <!-- Mobile Screen Navbar  -->
-      <nav class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden z-10">
-        <div>
-          <a href="./index.html"><img src="./assets/logo1.png" class="w-20 cursor-pointer" alt="logo" /></a>
-        </div>
-        <div class="flex items-center">
-          <h2 id="icon1">
-            <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
-          </h2>
-          <h2 id="icon2" class="hidden">
-            <i class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"></i>
-          </h2>
-        </div>
-      </nav>
+      </section>
 
-      <div
-        class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden z-10">
-        <ul class="flex flex-col gap-4">
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="#about">Menu</a>
-          </li>
-          <li class="cursor-pointer">
-            <button id="category2" class="hover:text-[#17A600]">
-              Category <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500">
-              <a href="./category/smoothies.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothies</a>
-              <a href="./category/smoothiebowl.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Smoothie
-                Bowl</a>
-              <a href="./category/juices.html" class="hover:text-white hover:bg-[#17A600] px-2 py-2">Juices</a>
-            </div>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./aboutus.html">About Us</a>
-          </li>
-          <li class="hover:text-[#17A600] cursor-pointer">
-            <a href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact Page  -->
-    <section class="my-10">
-      <div class="contact-us my-10">
+      <!-- Contact Page  -->
+      <section class="my-10">
         <form name="submit-to-google-sheet">
+<<<<<<< HEAD
         <h1 class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]">
           Contact&nbsp;<span class="text-[#863A29]">Us</span>
         </h1>
@@ -197,94 +255,245 @@
                     class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"></i></a></span>
               <span><a href="https://wa.me/9324999109"><i
                     class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"></i></a></span>
+=======
+          <div class="contact-us my-10">
+            <h1
+              class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]"
+            >
+              Contact&nbsp;<span class="text-[#863A29]">Us</span>
+            </h1>
+          </div>
+
+          <div class="flex items-center justify-center h-full flex-col">
+            <div class="relative pb-8">
+              <input
+                type="text"
+                name="name"
+                id="Name"
+                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+                autocomplete="off"
+              />
+              <label
+                for="Name"
+                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all peer-visited:-top-4"
+                >Name</label
+              >
+            </div>
+            <div class="relative pb-8">
+              <input
+                type="text"
+                name="email"
+                id="Email"
+                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+                autocomplete="off"
+              />
+              <label
+                for="Email"
+                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+                >Email</label
+              >
+            </div>
+            <div class="relative pb-8">
+              <input
+                type="text"
+                name="contactno"
+                id="Contactno"
+                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+                autocomplete="off"
+              />
+              <label
+                for="Contactno"
+                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+                >Contact no.</label
+              >
+            </div>
+            <div class="relative pb-8">
+              <input
+                type="text"
+                name="feeedback"
+                id="Feedback"
+                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+                autocomplete="off"
+              />
+              <label
+                for="Feedback"
+                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
+                >Feedback your opinion</label
+              >
+            </div>
+
+            <button
+              label="Submit"
+              class="bg-[#17A600] px-3 py-2 rounded-full text-white"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+        <span
+          id="msg"
+          class="flex justify-center items-center mt-4 text-xl text-[#863A29] display-block"
+        >
+        </span>
+      </section>
+
+      <!-- footer -->
+      <footer
+        class="mx-auto bg-[#863A29] flex justify-center items-center flex-col text-white"
+      >
+        <div
+          id="top"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center items-center"
+        >
+          <div class="flex flex-col gap-4 justify-center items-center px-2">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Dont be shy, say HI!
+>>>>>>> fa297fcc240904b8fc1c60da9b68ba45a71731d8
             </h2>
+            <div class="my-2 flex flex-col gap-2">
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-phone text-xl"></i></span>
+                9324999109
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-clock text-xl"></i></span>
+                Mon - Sat 10.00 - 10.00 Sunday CLOSED
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span><i class="fa-solid fa-location-dot text-xl"></i></span>
+                <a href="https://maps.app.goo.gl/hWzg3GHBgNN5bSLNA"
+                  >Shop no.3, Nityanand baug society, opp Navbharat
+                  apartment,<br />
+                  Mahul road, Chembur (E) Mumbai 400074</a
+                >
+              </h3>
+            </div>
+
+            <div id="socials" class="p-2">
+              <!----- socials------>
+              <h2 class="text-white text-3xl flex gap-4">
+                <span
+                  ><a href="https://www.instagram.com/nutreesmoothies/"
+                    ><i
+                      class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a
+                    href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+                <span
+                  ><a href="https://wa.me/9324999109"
+                    ><i
+                      class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
+                    ></i></a
+                ></span>
+              </h2>
+            </div>
+          </div>
+
+          <div id="opening-hour" class="flex flex-col gap-3">
+            <h2 class="text-2xl sm:text-3xl font-semibold">Opening Hours</h2>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-base sm:text-lg">
+                Monday…………………………………..10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Tuesday…………………………………..10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Wednesday……………………………..10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Thursday…………………………………10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Friday………………………………………10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Saturday………………………………….10: 00 – 21: 00
+              </h3>
+              <h3 class="text-base sm:text-lg">
+                Sunday…………………………………………….CLOSED
+              </h3>
+            </div>
+          </div>
+
+          <div id="footer-right" class="flex-col flex items-center">
+            <h2 class="text-3xl font-semibold">Get in touch</h2>
+            <h3 class="text-xl pt-1">Contact us</h3>
+            <h3 class="text-xl pt-1">About</h3>
+            <h3 class="text-xl pt-1">Blogs</h3>
           </div>
         </div>
 
-        <div id="opening-hour" class="flex flex-col gap-3">
-          <h2 class="text-2xl sm:text-3xl font-semibold">Opening Hours</h2>
-          <div class="flex flex-col gap-2">
-            <h3 class="text-base sm:text-lg">
-              Monday…………………………………..10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Tuesday…………………………………..10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Wednesday……………………………..10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Thursday…………………………………10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Friday………………………………………10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Saturday………………………………….10: 00 – 21: 00
-            </h3>
-            <h3 class="text-base sm:text-lg">
-              Sunday…………………………………………….CLOSED
-            </h3>
-          </div>
+        <div id="copyright" class="flex items-center justify-center">
+          <p class="">
+            <span><i class="fa-regular fa-copyright"></i></span>
+            2024 Nutree Smoothies, All Rights Reserved
+          </p>
         </div>
+      </footer>
+    </main>
 
-        <div id="footer-right" class="flex-col flex items-center">
-          <h2 class="text-3xl font-semibold">Get in touch</h2>
-          <h3 class="text-xl pt-1">Contact us</h3>
-          <h3 class="text-xl pt-1">About</h3>
-          <h3 class="text-xl pt-1">Blogs</h3>
-        </div>
-      </div>
+    <script>
+      const viewMore = document.getElementById("view-btn");
+      const category = document.getElementById("category");
+      const category2 = document.getElementById("category2");
+      const hamburgerMenu = document.querySelector(".hamburger");
+      const hamburgerMenu1 = document.querySelector(".hamburger1");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
 
-      <div id="copyright" class="flex items-center justify-center">
-        <p class="">
-          <span><i class="fa-regular fa-copyright"></i></span>
-          2024 Nutree Smoothies, All Rights Reserved
-        </p>
-      </div>
-    </footer>
-  </main>
+      const toggleView = () => {
+        const menu2 = document.getElementById("menu2");
+        if (menu2.classList.contains("hidden")) {
+          menu2.classList.remove("hidden");
+          menu2.classList.add("flex");
+          viewMore.textContent = "View Less";
+          console.log("Text changed to 'View Less'");
+        } else {
+          menu2.classList.remove("flex");
+          menu2.classList.add("hidden");
+          viewMore.textContent = "View More";
+          console.log("Text changed to 'View More'");
+        }
+      };
 
-  <script>
-    const viewMore = document.getElementById("view-btn");
-    const category = document.getElementById("category");
-    const category2 = document.getElementById("category2");
-    const hamburgerMenu = document.querySelector(".hamburger");
-    const hamburgerMenu1 = document.querySelector(".hamburger1");
-    const icon1 = document.getElementById("icon1");
-    const icon2 = document.getElementById("icon2");
+      category.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("hidden");
+        console.log("button toggled");
+      });
 
-    const toggleView = () => {
-      const menu2 = document.getElementById("menu2");
-      if (menu2.classList.contains("hidden")) {
-        menu2.classList.remove("hidden");
-        menu2.classList.add("flex");
-        viewMore.textContent = "View Less";
-        console.log("Text changed to 'View Less'");
-      } else {
-        menu2.classList.remove("flex");
-        menu2.classList.add("hidden");
-        viewMore.textContent = "View More";
-        console.log("Text changed to 'View More'");
-      }
-    };
+      category2.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".subnav");
+        dropdownMenu.classList.toggle("hidden");
+      });
 
-    category.addEventListener("click", () => {
-      let dropdownMenu = document.querySelector(".dropdown-menu");
-      dropdownMenu.classList.toggle("hidden");
-      console.log("button toggled");
-    });
+      icon1.addEventListener("click", () => {
+        icon1.classList.add("hidden");
+        icon2.classList.remove("hidden");
+      });
 
-    category2.addEventListener("click", () => {
-      let dropdownMenu = document.querySelector(".subnav");
-      dropdownMenu.classList.toggle("hidden");
-    });
+      icon2.addEventListener("click", () => {
+        icon1.classList.remove("hidden");
+        icon2.classList.add("hidden");
+      });
 
-    icon1.addEventListener("click", () => {
-      icon1.classList.add("hidden");
-      icon2.classList.remove("hidden");
-    });
+      hamburgerMenu.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+      hamburgerMenu1.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
 
+<<<<<<< HEAD
     icon2.addEventListener("click", () => {
       icon1.classList.remove("hidden");
       icon2.classList.add("hidden");
@@ -325,7 +534,44 @@
           
           .catch(error => console.error('Error!', error.message))
       })
+=======
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
-</body>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+>>>>>>> fa297fcc240904b8fc1c60da9b68ba45a71731d8
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbySvtmIigbjyO74Js_0AqtZ0KAvgBrbanAu6ThqWNWzcOQZUpnR1SCCDTElxzu5t82l/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "We got your response!!!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 4000);
+            form.reset();
+          })
+
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>

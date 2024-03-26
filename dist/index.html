@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <main class="container mx-auto w-full">
+    <main class="container mx-auto w-full overflow-hidden">
       <!-- Navbar  -->
       <section class="">
         <!-- Larger screen -->
@@ -46,7 +46,7 @@
               <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="./aboutus.html">Menu</a>
+              <a href="./menu.html">Menu</a>
             </li>
             <li class="cursor-pointer">
               <button id="category" class="hover:text-[#17A600]">
@@ -127,12 +127,12 @@
         <div
           class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
         >
-          <ul class="flex flex-col gap-4">
+          <ul class="flex flex-col gap-4 text-center">
             <li class="hover:text-[#17A600] cursor-pointer">
               <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#about">Menu</a>
+              <a href="./menu.html">Menu</a>
             </li>
             <li class="cursor-pointer">
               <button id="category2" class="hover:text-[#17A600]">
@@ -185,7 +185,7 @@
 
       <!-- Banner section -->
       <section
-        class="w-full h-full sm:my-20 my-10 flex justify-center items-center"
+        class="banner w-full h-full sm:my-20 my-10 flex justify-center items-center"
       >
         <div
           class="flex lg:flex-row flex-col w-full justify-center gap-20 lg:gap-20 md:gap-10 items-center"
@@ -194,10 +194,12 @@
             <h2 class="bannerTitle text-2xl sm:text-3xl font-semibold">
               WE PROVIDE YOU <span class="text-[#17A600]">SUPER</span>
             </h2>
-            <h2 class="text-2xl sm:text-3xl font-semibold">
+            <h2 class="bannerTitle text-2xl sm:text-3xl font-semibold">
               <span class="text-[#17A600]">QUALITY</span> SMOOTHIES
             </h2>
-            <p class="sm:text-lg text-base font-normal text-slate-500">
+            <p
+              class="bannerPara sm:text-lg text-base font-normal text-slate-500"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
               suscipit veritatis ex Lorem ipsum dolor sit amet consectetur
               adipisicing elit.
@@ -209,7 +211,7 @@
               <a href="#menu">View Menu</a>
             </button>
           </div>
-          <div class="flex hover:rotate-17 transform duration-300">
+          <div class="bannerImg flex hover:rotate-17 transform duration-300">
             <img
               src="./assets/banner2.jpg"
               class="banner -left-4 w-32 h-56 sm:h-full md:w-64 rounded-lg origin-bottom-left drop-shadow-md rotate-12"
@@ -413,35 +415,35 @@
         class="flex justify-evenly items-center max-lg:flex-col my-10 sm:my-14 md:my-20"
       >
         <h3 class="text-4xl leading-[68px] lg:max-w-md pl-10">
-          Sign Up Form <span class="text-[#17A600]"> Updates</span> <span class="text-[#863A29]"> & Newsletter</span>
+          Sign Up Form <span class="text-[#17A600]"> Updates</span>
+          <span class="text-[#863A29]"> & Newsletter</span>
         </h3>
 
         <div
-
-          class="flex flex-row py-2 px-2 border border-[#17A600] rounded-full sm:w-[400px] justify-between"
-        ><form name="submit-to-google-sheet">
-        <div
-         class="flex flex-row py-2 px-2 border border-[#863A29] rounded-full sm:w-[400px] justify-evenly"
+          class="flex flex-row py-2 px-2 rounded-full sm:w-[400px] justify-between"
         >
-
-          <input
-            type="text"
-            name="Email"
-            placeholder="subscribe@nutree.com"
-            class="focus:outline-none text-[#863A29] "
-          />
-          <div class="flex max-sm:justify-end items-center max-sm:w-full">
-            <button
-              label="Sign Up"
-              class="bg-[#17A600] px-3 py-2 rounded-full text-white"
+          <form name="submit-to-google-sheet ">
+            <div
+              class="flex flex-row py-2 px-2 border border-[#863A29] rounded-full sm:w-[400px] justify-between"
             >
-              Sign Up
-            </button>
-          </div>
+              <input
+                type="text"
+                name="Email"
+                placeholder="subscribe@nutree.com"
+                class="focus:outline-none text-[#863A29]"
+              />
+              <div class="flex max-sm:justify-end items-center max-sm:w-full">
+                <button
+                  label="Sign Up"
+                  class="bg-[#17A600] px-3 py-2 rounded-full text-white"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </section>
-      
 
       <!-- footer -->
       <footer
@@ -449,9 +451,9 @@
       >
         <div
           id="top"
-          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center items-center"
         >
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 justify-center items-center px-2">
             <h2 class="text-2xl sm:text-3xl font-semibold">
               Dont be shy, say HI!
             </h2>
@@ -466,8 +468,11 @@
               </h3>
               <h3 class="text-1xl flex gap-3">
                 <span><i class="fa-solid fa-location-dot text-xl"></i></span>
-                Shop no.3, Nityanand baug society, opp Navbharat apartment,<br>
-                Mahul road, Chembur (E) Mumbai 400074
+                <a href="https://maps.app.goo.gl/hWzg3GHBgNN5bSLNA"
+                  >Shop no.3, Nityanand baug society, opp Navbharat
+                  apartment,<br />
+                  Mahul road, Chembur (E) Mumbai 400074</a
+                >
               </h3>
             </div>
 
@@ -481,18 +486,22 @@
                     ></i></a
                 ></span>
                 <span
-                  ><a href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
+                  ><a
+                    href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
                     ><i
                       class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
                     ></i></a
                 ></span>
                 <span
+<<<<<<< HEAD
                   ><a href=""
                     ><i
                       class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"
                     ></i></a
                 ></span>
                 <span
+=======
+>>>>>>> fa297fcc240904b8fc1c60da9b68ba45a71731d8
                   ><a href="https://wa.me/9324999109"
                     ><i
                       class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
@@ -547,16 +556,38 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxuB4hllrws9z7zy0UlG8Xxq4QE5McZxjbcHmK-TH92WErlgIgP5vWjUxYV-XfVZ0mBnA/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
+      //gsap.registerPlugin(ScrollTrigger);
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxuB4hllrws9z7zy0UlG8Xxq4QE5McZxjbcHmK-TH92WErlgIgP5vWjUxYV-XfVZ0mBnA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      const bannerTitle = document.getElementsByClassName("bannerTitle");
+
+      gsap.from(bannerTitle, {
+        //scrollTrigger: ".banner",
+        y: 100,
+        delay: 2,
+        opacity: 0,
+        duration: 0.8,
+        ease: "bounce",
+      });
+
+      gsap.from(".bannerPara", {
+        x: 100,
+        delay: 2,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power1.in",
+      });
     </script>
   </body>
 </html>

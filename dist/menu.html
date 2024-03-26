@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -37,10 +37,10 @@
             class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
           >
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="../index.html">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="#about">Menu</a>
+              <a href="./menu.html">Menu</a>
             </li>
             <li class="cursor-pointer">
               <button id="category" class="hover:text-[#17A600]">
@@ -52,17 +52,17 @@
                 class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
               >
                 <a
-                  href="./smoothies.html"
+                  href="./category/smoothies.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Smoothies</a
                 >
                 <a
-                  href="./smoothiebowl.html"
+                  href="./category/smoothiebowl.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Smoothie Bowl</a
                 >
                 <a
-                  href="./juices.html"
+                  href="./category/juices.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Juices</a
                 >
@@ -72,7 +72,7 @@
           <div>
             <a href="./index.html"
               ><img
-                src="../assets/logo1.png"
+                src="./assets/logo1.png"
                 class="w-20 cursor-pointer"
                 alt="logo"
             /></a>
@@ -82,10 +82,10 @@
               class="flex text-lg text-[#874900] font-medium items-center gap-10"
             >
               <li class="hover:text-[#17A600] cursor-pointer">
-                <a href="../blog.html">Blog</a>
+                <a href="./blog.html">Blog</a>
               </li>
               <li class="hover:text-[#17A600] cursor-pointer">
-                <a href="../aboutus.html">About Us</a>
+                <a href="./aboutus.html">About Us</a>
               </li>
               <li class="hover:text-[#17A600] cursor-pointer">
                 <a href="./contact.html">Contact</a>
@@ -101,7 +101,7 @@
           <div>
             <a href="./index.html"
               ><img
-                src="../assets/logo1.png"
+                src="./assets/logo1.png"
                 class="w-20 cursor-pointer"
                 alt="logo"
             /></a>
@@ -123,10 +123,10 @@
         >
           <ul class="flex flex-col gap-4 text-center">
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="../index.html">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="../aboutus.html">Menu</a>
+              <a href="./menu.html">Menu</a>
             </li>
             <li class="cursor-pointer">
               <button id="category2" class="hover:text-[#17A600]">
@@ -136,30 +136,30 @@
                 class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
               >
                 <a
-                  href="./smoothies.html"
+                  href="./category/smoothies.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Smoothies</a
                 >
                 <a
-                  href="./smoothiebowl.html"
+                  href="./category/smoothiebowl.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Smoothie Bowl</a
                 >
                 <a
-                  href="./juices.html"
+                  href="./category/juices.html"
                   class="hover:text-white hover:bg-[#17A600] px-2 py-2"
                   >Juices</a
                 >
               </div>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="../blog.html">Blog</a>
+              <a href="./blog.html">Blog</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="../aboutus.html">About Us</a>
+              <a href="./aboutus.html">About Us</a>
             </li>
             <li class="hover:text-[#17A600] cursor-pointer">
-              <a href="../contact.html">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -169,7 +169,7 @@
 
       <section class="my-4">
         <div class="">
-          <img src="../assets/juices.jpg" class="w-full rounded-md" alt="" />
+          <img src="./assets/cat-hero1.jpg" class="w-full rounded-md" alt="" />
         </div>
       </section>
 
@@ -178,17 +178,197 @@
       <section class="my-10">
         <div class="flex justify-center items-center my-2">
           <h2 class="text-4xl sm:text-5xl font-semibold text-[#863A29]">
-            OUR JUICES
+            OUR MENUS
           </h2>
         </div>
-        
-        <!-- juices -->
-        <div id="juices" class="flex justify-center my-10">
+        <!-- Buttons -->
+        <div class="flex justify-center gap-4">
+          <button
+            id="smoothiesBtn"
+            class="cat-btn sm:text-xl text-base active text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Smoothies
+          </button>
+          <button
+            id="smoothieBowlBtn"
+            class="cat-btn sm:text-xl text-base text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Smoothie Bowl
+          </button>
+          <button
+            id="juicesBtn"
+            class="cat-btn sm:text-xl text-base text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Juices
+          </button>
+        </div>
+
+        <!-- categories -->
+        <!-- Smoothies -->
+        <div id="smoothies" class="flex justify-center my-10">
           <div
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
           >
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- smoothie-bowl -->
+        <div id="smoothie-bowl" class="flex justify-center my-10 hidden">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothie Bowl</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- juices -->
+        <div id="juices" class="flex justify-center my-10 hidden">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-y-7"
+          >
+            <div class="w-64 rounded-md flex flex-col items-center">
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -197,7 +377,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -206,7 +386,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -215,7 +395,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -224,7 +404,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -233,7 +413,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -242,7 +422,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -251,7 +431,7 @@
               </div>
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="../assets/menuimg.png" class="w-56" alt="menu" />
+              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Juices</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -263,42 +443,6 @@
         </div>
       </section>
 
-<<<<<<< HEAD
-    <!-- footer -->
-    <footer class="mx-auto bg-[#863A29] flex justify-center items-center flex-col text-white">
-      <div id="top" class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center">
-        <div class="flex flex-col gap-4">
-          <h2 class="text-2xl sm:text-3xl font-semibold">
-            Dont be shy, say HI!
-          </h2>
-          <div class="my-2 flex flex-col gap-2">
-            <h3 class="text-1xl flex gap-3">
-              <span><i class="fa-solid fa-phone text-xl"></i></span>
-              9324999109
-            </h3>
-            <h3 class="text-1xl flex gap-3">
-              <span><i class="fa-solid fa-clock text-xl"></i></span>
-              Mon - Sat 10.00 - 10.00 Sunday CLOSED
-            </h3>
-            <h3 class="text-1xl flex gap-3">
-              <span><i class="fa-solid fa-location-dot text-xl"></i></span>
-              Shop no.3, Nityanand baug society, opp Navbharat apartment,<br>
-              Mahul road, Chembur (E) Mumbai 400074
-            </h3>
-          </div>
-
-          <div id="socials" class="p-2">
-            <!----- socials------>
-            <h2 class="text-white text-3xl flex gap-4">
-              <span><a href="https://www.instagram.com/nutreesmoothies/"><i
-                    class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"><i
-                    class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href=""><i
-                    class="fa-brands fa-x-twitter hover:text-[#17A600] transform duration-300"></i></a></span>
-              <span><a href="https://wa.me/9324999109"><i
-                    class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"></i></a></span>
-=======
       <!-- footer -->
       <footer
         class="mx-auto bg-[#863A29] flex justify-center items-center flex-col text-white"
@@ -310,7 +454,6 @@
           <div class="flex flex-col gap-4 justify-center items-center px-2">
             <h2 class="text-2xl sm:text-3xl font-semibold">
               Dont be shy, say HI!
->>>>>>> fa297fcc240904b8fc1c60da9b68ba45a71731d8
             </h2>
             <div class="my-2 flex flex-col gap-2">
               <h3 class="text-1xl flex gap-3">
@@ -402,18 +545,19 @@
     </main>
 
     <script>
+      const viewMore = document.getElementById("view-btn");
+      const category = document.getElementById("category");
+      const category2 = document.getElementById("category2");
+      const hamburgerMenu = document.querySelector(".hamburger");
+      const hamburgerMenu1 = document.querySelector(".hamburger1");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
+
       const catBtns = document.querySelectorAll(".cat-btn");
       // buttons
       const smoothiesBtn = document.getElementById("smoothiesBtn");
       const smoothieBowlBtn = document.getElementById("smoothieBowlBtn");
       const juicesBtn = document.getElementById("juicesBtn");
-      const category = document.getElementById("category");
-      const category2 = document.getElementById("category2");
-
-      const hamburgerMenu = document.querySelector(".hamburger");
-      const hamburgerMenu1 = document.querySelector(".hamburger1");
-      const icon1 = document.getElementById("icon1");
-      const icon2 = document.getElementById("icon2");
       // Categories
       const smoothiesCat = document.getElementById("smoothies");
       const smoothieBowl = document.getElementById("smoothie-bowl");
@@ -427,6 +571,38 @@
           btn.classList.add("active");
         });
       });
+
+      smoothiesBtn.addEventListener("click", () => {
+        smoothiesCat.classList.remove("hidden");
+        smoothieBowl.classList.add("hidden");
+        juices.classList.add("hidden");
+      });
+
+      smoothieBowlBtn.addEventListener("click", () => {
+        smoothiesCat.classList.add("hidden");
+        smoothieBowl.classList.remove("hidden");
+      });
+
+      juicesBtn.addEventListener("click", () => {
+        smoothiesCat.classList.add("hidden");
+        smoothieBowl.classList.add("hidden");
+        juices.classList.remove("hidden");
+      });
+
+      const toggleView = () => {
+        const menu2 = document.getElementById("menu2");
+        if (menu2.classList.contains("hidden")) {
+          menu2.classList.remove("hidden");
+          menu2.classList.add("flex");
+          viewMore.textContent = "View Less";
+          console.log("Text changed to 'View Less'");
+        } else {
+          menu2.classList.remove("flex");
+          menu2.classList.add("hidden");
+          viewMore.textContent = "View More";
+          console.log("Text changed to 'View More'");
+        }
+      };
 
       category.addEventListener("click", () => {
         let dropdownMenu = document.querySelector(".dropdown-menu");
