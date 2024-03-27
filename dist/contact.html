@@ -173,86 +173,54 @@
       <!-- Contact Page  -->
       <section class="my-10">
         <form name="submit-to-google-sheet">
-          <div class="contact-us my-10">
-            <h1
-              class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]"
-            >
-              Contact&nbsp;<span class="text-[#863A29]">Us</span>
-            </h1>
-          </div>
+        <h1 class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]">
+          Contact&nbsp;<span class="text-[#863A29]">Us</span>
+        </h1>
+      </div>
 
-          <div class="flex items-center justify-center h-full flex-col">
-            <div class="relative pb-8">
-              <input
-                type="text"
-                name="name"
-                id="Name"
-                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-                autocomplete="off"
-              />
-              <label
-                for="Name"
-                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all peer-visited:-top-4"
-                >Name</label
-              >
-            </div>
-            <div class="relative pb-8">
-              <input
-                type="text"
-                name="email"
-                id="Email"
-                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-                autocomplete="off"
-              />
-              <label
-                for="Email"
-                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-                >Email</label
-              >
-            </div>
-            <div class="relative pb-8">
-              <input
-                type="text"
-                name="contactno"
-                id="Contactno"
-                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-                autocomplete="off"
-              />
-              <label
-                for="Contactno"
-                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-                >Contact no.</label
-              >
-            </div>
-            <div class="relative pb-8">
-              <input
-                type="text"
-                name="feeedback"
-                id="Feedback"
-                class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
-                autocomplete="off"
-              />
-              <label
-                for="Feedback"
-                class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all"
-                >Feedback your opinion</label
-              >
-            </div>
+      <div class="flex items-center justify-center h-full flex-col">
+        <div class="relative pb-8">
+          <input type="text" name = "name"  id="Name" 
+            class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+            autocomplete="off" />
+          <label for="Name"
+            class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Name</label>
+        </div>
+        <div class="relative pb-8">
+          <input type="text" name = "email"  id="Email"
+            class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+            autocomplete="off" />
+          <label for="Email"
+            class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Email</label>
+        </div>
+        <div class="relative pb-8">
+          <input type="text" name= "contactno" id="Contactno"
+            class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+            autocomplete="off" />
+          <label for="Contactno"
+            class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Contact
+            no.</label>
+        </div>
+        <div class="relative pb-8">
+          <input type="text" name="feedback" id="Feedback"
+            class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
+            autocomplete="off" />
+          <label for="Feedback"
+            class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Feedback
+            your opinion</label>
+        </div>
 
-            <button
-              label="Submit"
-              class="bg-[#17A600] px-3 py-2 rounded-full text-white"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-        <span
-          id="msg"
-          class="flex justify-center items-center mt-4 text-xl text-[#863A29] display-block"
-        >
-        </span>
-      </section>
+        <button label="Submit" class="bg-[#17A600] px-3 py-2 rounded-full text-white ">
+          Submit
+        </button>
+      </form>
+      </div>
+      <span id="msg" 
+      class="flex justify-center items-center mt-4 text-xl text-[#863A29] display-block">
+      </span>
+    </section>
+
+    
 
       <!-- footer -->
       <footer
@@ -306,6 +274,12 @@
                     ><i
                       class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
                     ></i></a
+                ></span>
+                <span
+                 ><a href="mailto:Nutreesmoothiess@gmail.com"
+                  ><i 
+                    class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
+                  ></i></a
                 ></span>
               </h2>
             </div>
@@ -409,14 +383,28 @@
         navbarToggler.classList.toggle("hidden");
       });
 
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    icon2.addEventListener("click", () => {
+      icon1.classList.remove("hidden");
+      icon2.classList.add("hidden");
+    });
+
+    hamburgerMenu.addEventListener("click", () => {
+      let navbarToggler = document.querySelector(".navbar");
+      navbarToggler.classList.toggle("hidden");
+    });
+    hamburgerMenu1.addEventListener("click", () => {
+      let navbarToggler = document.querySelector(".navbar");
+      navbarToggler.classList.toggle("hidden");
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
