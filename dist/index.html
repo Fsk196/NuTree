@@ -22,9 +22,9 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script 
-    src="https://kit.fontawesome.com/98a179a0c5.js"
-    crossorigin="anonymous"
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
     ></script>
     <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon" />
 
@@ -176,7 +176,7 @@
       </section>
 
       <!-- Hero Section  -->
-      <section class="my-4" id="home">
+      <section class="py-4" id="home">
         <div>
           <img src="./assets//hero.png" class="w-full hidden sm:block" alt="" />
           <img
@@ -189,7 +189,7 @@
 
       <!-- Banner section -->
       <section
-        class="banner w-full h-full sm:my-20 my-10 flex justify-center items-center"
+        class="banner w-full h-full sm:py-20 py-10 flex justify-center items-center"
       >
         <div
           class="flex lg:flex-row flex-col w-full justify-center gap-20 lg:gap-20 md:gap-10 items-center"
@@ -210,9 +210,9 @@
             </p>
 
             <button
-              class="bg-[#drop-shadow-2xl] text-white px-4 py-2 rounded-md my-4 text-lg"
+              class="bg-[#17A600] text-white px-4 py-2 rounded-md my-4 text-lg"
             >
-              <a href="#menu">View Menu</a>
+              <a href="./menu.html">View Menu</a>
             </button>
           </div>
           <div class="bannerImg flex hover:rotate-17 transform duration-300">
@@ -231,23 +231,68 @@
       </section>
 
       <!------------ Menu ---------------->
-      <section class="my-10 py-4">
+      <section class="py-10 bg-[#17A600]/80 rounded-md">
         <div class="flex flex-col gap-10 justify-center">
           <div>
             <h1
-              class="flex justify-center font-medium text-3xl md:text-5xl text-[#166534]"
+              class="flex justify-center font-medium text-3xl md:text-5xl text-white"
             >
               Smoothies <span class="text-[#874900]">&nbsp;& Juices</span>
             </h1>
-            <p class="flex justify-center py-3 text-slate-400">
+            <p class="flex justify-center py-3 text-white">
               Smoothie demo Designed for you
             </p>
           </div>
 
           <div
-            class="menu1 flex items-center flex-wrap gap-y-10 justify-evenly"
+            class="menu1 flex items-center flex-wrap gap-y-10 gap-x-2 justify-evenly"
           >
-            <div class="w-64 rounded-md flex flex-col items-center">
+            <div
+              class="w-64 rounded-md flex flex-col items-center bg-white py-4 drop-shadow-md"
+            >
+              <img
+                src="./assets/menuimg.png"
+                class="w-56 hover:scale-90 duration-300 transition ease-in-out"
+                alt="menu"
+              />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-64 rounded-md flex flex-col items-center bg-white py-4 drop-shadow-md"
+            >
+              <img
+                src="./assets/menuimg.png"
+                class="w-56 hover:scale-90 duration-300 transition ease-in-out"
+                alt="menu"
+              />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-64 rounded-md flex flex-col items-center bg-white py-4 drop-shadow-md"
+            >
+              <img
+                src="./assets/menuimg.png"
+                class="w-56 hover:scale-90 duration-300 transition ease-in-out"
+                alt="menu"
+              />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="w-64 rounded-md flex flex-col items-center">
               <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
@@ -264,23 +309,14 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
               </div>
-            </div>
-            <div class="w-64 rounded-md flex flex-col items-center">
-              <img src="./assets/menuimg.png" class="w-56" alt="menu" />
-              <div class="flex items-center my-2 flex-col">
-                <h2 class="text-xl font-medium">Smoothies</h2>
-                <p class="text-base text-slate-400 text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
-              </div>
-            </div>
+            </div> -->
           </div>
 
           <div
             id="menu2"
-            class="menu2 transform duration-300 hidden sm:flex items-center flex-wrap gap-y-10 justify-evenly"
+            class="menu2 transform duration-300 hidden sm:flex items-center flex-wrap gap-y-10 gap-x-2 justify-evenly"
           >
-            <div class="w-64 rounded-md flex flex-col items-center">
+            <!-- <div class="w-64 rounded-md flex flex-col items-center">
               <img src="./assets/menuimg.png" class="w-56" alt="menu" />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
@@ -300,6 +336,51 @@
             </div>
             <div class="w-64 rounded-md flex flex-col items-center">
               <img src="./assets/menuimg.png" class="w-56" alt="menu" />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div> -->
+            <div
+              class="w-64 rounded-md flex flex-col items-center bg-white py-4 drop-shadow-md"
+            >
+              <img
+                src="./assets/menuimg.png"
+                class="w-56 hover:scale-90 duration-300 transition ease-in-out"
+                alt="menu"
+              />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-64 rounded-md flex flex-col items-center bg-white py-4 drop-shadow-md"
+            >
+              <img
+                src="./assets/menuimg.png"
+                class="w-56 hover:scale-90 duration-300 transition ease-in-out"
+                alt="menu"
+              />
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl font-medium">Smoothies</h2>
+                <p class="text-base text-slate-400 text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-64 rounded-md flex flex-col items-center bg-white py-4 drop-shadow-md"
+            >
+              <img
+                src="./assets/menuimg.png"
+                class="w-56 hover:scale-90 duration-300 transition ease-in-out"
+                alt="menu"
+              />
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium">Smoothies</h2>
                 <p class="text-base text-slate-400 text-center">
@@ -354,7 +435,7 @@
       <!-- Review section -->
 
       <section
-        class="my-10 sm:my-14 md:my-20 flex justify-center items-center relative"
+        class="my-10 sm:my-14 md:my-20 flex justify-center items-center relative bg-[#17A600]/20"
       >
         <div
           class="mySwiper w-[700px] flex justify-center overflow-hidden py-10 cursor-pointer"
@@ -416,7 +497,7 @@
       <!-- Signin Newsletter -->
 
       <section
-        class="flex justify-evenly items-center max-lg:flex-col my-10 sm:my-14 md:my-20"
+        class="flex justify-evenly items-center max-lg:flex-col mt-10 sm:mt-14 md:mt-20 rounded-md pb-10 md:pb-0"
       >
         <h3 class="text-4xl leading-[68px] lg:max-w-md pl-10">
           Sign Up Form <span class="text-[#17A600]"> Updates</span>
@@ -428,7 +509,7 @@
         >
           <form name="submit-to-google-sheet ">
             <div
-              class="flex flex-row py-2 px-2 border border-[#863A29] rounded-full sm:w-[400px] justify-between"
+              class="flex flex-row py-2 px-2 border border-[#863A29] rounded-full sm:w-[400px] justify-between bg-white shadow-md"
             >
               <input
                 type="text"
@@ -461,14 +542,14 @@
             <h2 class="text-2xl sm:text-3xl font-semibold">
               Dont be shy, say HI!
             </h2>
-            <div class="my-2 flex flex-col gap-2">
+            <div class="my-2 flex flex-col gap-2 justify-center w-full">
               <h3 class="text-1xl flex gap-3">
                 <span><i class="fa-solid fa-phone text-xl"></i></span>
                 9324999109
               </h3>
               <h3 class="text-1xl flex gap-3">
                 <span><i class="fa-solid fa-clock text-xl"></i></span>
-                Mon - Sat 10.00 - 10.00 Sunday CLOSED
+                EveryDay - Sat 10.00 - 10.00
               </h3>
               <h3 class="text-1xl flex gap-3">
                 <span><i class="fa-solid fa-location-dot text-xl"></i></span>
@@ -503,10 +584,10 @@
                     ></i></a
                 ></span>
                 <span
-                 ><a href="mailto:Nutreesmoothiess@gmail.com"
-                  ><i 
-                    class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
-                  ></i></a
+                  ><a href="mailto:Nutreesmoothiess@gmail.com"
+                    ><i
+                      class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
+                    ></i></a
                 ></span>
               </h2>
             </div>
@@ -534,7 +615,7 @@
                 Saturday………………………………….10: 00 – 21: 00
               </h3>
               <h3 class="text-base sm:text-lg">
-                Sunday…………………………………………….CLOSED
+                Sunday………………………………….10: 00 – 21: 00
               </h3>
             </div>
           </div>

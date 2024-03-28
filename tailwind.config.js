@@ -7,6 +7,9 @@ module.exports = {
         20: "20deg",
         17: "17deg",
       },
+      scale: {
+        90: "0.9",
+      },
     },
   },
   plugins: [],
