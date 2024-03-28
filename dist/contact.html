@@ -171,20 +171,22 @@
       </section>
 
       <!-- Contact Page  -->
-      <section class="my-10">
+      <!-- <section class="my-10">
+
+
         <form name="submit-to-google-sheet">
         <h1 class="text-center text-3xl sm:text-5xl font-medium text-[#80CC28]">
           Contact&nbsp;<span class="text-[#863A29]">Us</span>
         </h1>
       </div>
 
-      <div class="flex items-center justify-center h-full flex-col">
+      <div class="flex items-center justify-center h-full flex-col my-5 w-full">
         <div class="relative pb-8">
           <input type="text" name = "name"  id="Name" 
             class="border-b py-1 focus:outline-none focus:border-green-500 focus:border-b-2 transition-colors peer"
             autocomplete="off" />
           <label for="Name"
-            class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500 transition-all">Name</label>
+            class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-500  transition-all">Name</label>
         </div>
         <div class="relative pb-8">
           <input type="text" name = "email"  id="Email"
@@ -218,9 +220,89 @@
       <span id="msg" 
       class="flex justify-center items-center mt-4 text-xl text-[#863A29] display-block">
       </span>
-    </section>
+    </section> -->
 
-    
+      <!-- component -->
+      <div class="flex items-center justify-center p-12">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="mx-auto w-full max-w-[550px]">
+          <form name="submit-to-google-sheet">
+            <div class="mb-5">
+              <label
+                for="name"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+            <div class="mb-5">
+              <label
+                for="email"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@domain.com"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+            <div class="mb-5">
+              <label
+                for="subject"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Subject
+              </label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Enter your subject"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+            <div class="mb-5">
+              <label
+                for="message"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Message
+              </label>
+              <textarea
+                rows="4"
+                name="message"
+                id="message"
+                placeholder="Type your message"
+                class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <span
+          id="msg"
+          class="flex justify-center items-center mt-4 text-xl text-[#863A29] display-block"
+        >
+        </span>
+      </div>
 
       <!-- footer -->
       <footer
@@ -276,10 +358,10 @@
                     ></i></a
                 ></span>
                 <span
-                 ><a href="mailto:Nutreesmoothiess@gmail.com"
-                  ><i 
-                    class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
-                  ></i></a
+                  ><a href="mailto:Nutreesmoothiess@gmail.com"
+                    ><i
+                      class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
+                    ></i></a
                 ></span>
               </h2>
             </div>
@@ -383,28 +465,28 @@
         navbarToggler.classList.toggle("hidden");
       });
 
-    icon2.addEventListener("click", () => {
-      icon1.classList.remove("hidden");
-      icon2.classList.add("hidden");
-    });
+      icon2.addEventListener("click", () => {
+        icon1.classList.remove("hidden");
+        icon2.classList.add("hidden");
+      });
 
-    hamburgerMenu.addEventListener("click", () => {
-      let navbarToggler = document.querySelector(".navbar");
-      navbarToggler.classList.toggle("hidden");
-    });
-    hamburgerMenu1.addEventListener("click", () => {
-      let navbarToggler = document.querySelector(".navbar");
-      navbarToggler.classList.toggle("hidden");
-    });
+      hamburgerMenu.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+      hamburgerMenu1.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
 
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
