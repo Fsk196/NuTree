@@ -526,9 +526,17 @@
                 </button>
               </div>
             </div>
+            <div class="pt-2">
+              <span
+                 id="msg"
+                 class="flex items-center text-xl text-[#863A29] display-block"
+               >
+               </span>
+             </div>
           </form>
         </div>
       </section>
+      
 
       <!-- footer -->
       <footer
@@ -641,16 +649,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script>
       //gsap.registerPlugin(ScrollTrigger);
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxuB4hllrws9z7zy0UlG8Xxq4QE5McZxjbcHmK-TH92WErlgIgP5vWjUxYV-XfVZ0mBnA/exec";
-      const form = document.forms["submit-to-google-sheet"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
+      
 
       const bannerTitle = document.getElementsByClassName("bannerTitle");
 
@@ -669,6 +668,26 @@
         opacity: 0,
         duration: 0.8,
         ease: "power1.in",
+      });
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbySvtmIigbjyO74Js_0AqtZ0KAvgBrbanAu6ThqWNWzcOQZUpnR1SCCDTElxzu5t82l/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "We got your response!!!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 4000);
+            form.reset();
+          })
+
+          .catch((error) => console.error("Error!", error.message));
       });
     </script>
   </body>
