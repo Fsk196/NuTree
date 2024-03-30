@@ -891,11 +891,6 @@ html {
   background-color: rgb(23 166 0 / 0.8);
 }
 
-.bg-\[\#6A64F1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(106 100 241 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#863A29\] {
   --tw-bg-opacity: 1;
   background-color: rgb(134 58 41 / var(--tw-bg-opacity));
