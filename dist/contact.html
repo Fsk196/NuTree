@@ -99,9 +99,10 @@
             </ul>
           </div>
         </nav>
+
         <!-- Mobile Screen Navbar  -->
         <nav
-          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden z-10"
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden bg-white"
         >
           <div>
             <a href="./index.html"
@@ -390,21 +391,6 @@
       const icon1 = document.getElementById("icon1");
       const icon2 = document.getElementById("icon2");
 
-      const toggleView = () => {
-        const menu2 = document.getElementById("menu2");
-        if (menu2.classList.contains("hidden")) {
-          menu2.classList.remove("hidden");
-          menu2.classList.add("flex");
-          viewMore.textContent = "View Less";
-          console.log("Text changed to 'View Less'");
-        } else {
-          menu2.classList.remove("flex");
-          menu2.classList.add("hidden");
-          viewMore.textContent = "View More";
-          console.log("Text changed to 'View More'");
-        }
-      };
-
       category.addEventListener("click", () => {
         let dropdownMenu = document.querySelector(".dropdown-menu");
         dropdownMenu.classList.toggle("hidden");
@@ -433,37 +419,6 @@
       hamburgerMenu1.addEventListener("click", () => {
         let navbarToggler = document.querySelector(".navbar");
         navbarToggler.classList.toggle("hidden");
-      });
-
-      icon2.addEventListener("click", () => {
-        icon1.classList.remove("hidden");
-        icon2.classList.add("hidden");
-      });
-
-      hamburgerMenu.addEventListener("click", () => {
-        let navbarToggler = document.querySelector(".navbar");
-        navbarToggler.classList.toggle("hidden");
-      });
-      hamburgerMenu1.addEventListener("click", () => {
-        let navbarToggler = document.querySelector(".navbar");
-        navbarToggler.classList.toggle("hidden");
-      });
-
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
       });
     </script>
     <script>
