@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <main class="container mx-auto w-full overflow-hidden scroll-smooth">
+    <main class="container mx-auto w-full overflow-hidden ">
       <!-- Navbar  -->
       <section class="">
         <!-- Larger screen -->
@@ -231,6 +231,7 @@
       </section>
 
       <!------------ Menu ---------------->
+      
       <section class="py-10 bg-slate-100 rounded-md">
         <div class="flex flex-col gap-10 justify-center">
           <div>
@@ -576,40 +577,6 @@
                 >
               </h3>
             </div>
-<<<<<<< HEAD
-
-            <div id="socials" class="p-2">
-              <!----- socials------>
-              <h2 class="text-white text-3xl flex gap-4">
-                <span
-                  ><a href="https://www.instagram.com/nutreesmoothies/"
-                    ><i
-                      class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300 "
-                    ></i></a
-                ></span>
-                <span
-                  ><a
-                    href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
-                    ><i
-                      class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
-                    ></i></a
-                ></span>
-                <span
-                  ><a href="https://wa.me/9324999109"
-                    ><i
-                      class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
-                    ></i></a
-                ></span>
-                <span
-                  ><a href="mailto:Nutreesmoothiess@gmail.com"
-                    ><i
-                      class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
-                    ></i></a
-                ></span>
-              </h2>
-            </div>
-=======
->>>>>>> 4c446fbe61f5d77907911ed73a56bc7ecd362555
           </div>
 
           <div id="opening-hour" class="flex flex-col items-center gap-3">
@@ -686,7 +653,7 @@
               ><h3 class="text-xl pt-1 hover:text-[#17A600]">About</h3></a
             >
             <a href="blog.html"
-              ><h3 class="text-xl pt-1 hover:text-[#17A600]">Blogs</h3></a
+              ><h3 class="text-xl pt-1 hover:text-[#17A600] ">Blogs</h3></a
             >
           </div>
         </div>
@@ -697,7 +664,7 @@
               <span
                 ><a href="https://www.instagram.com/nutreesmoothies/"
                   ><i
-                    class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
+                    class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300 "
                   ></i></a
               ></span>
               <span
@@ -730,7 +697,24 @@
           </p>
         </div>
       </footer>
+      <button class="flex justify-end w-full">
+       <!-- <a 
+         href="#"
+         id="toTop"
+         class="to-top fixed bottom-[16px] right-[32px] w-[50px] h-[50px] rounded-full flex items-center justify-center text-[32px] text-gray-700 opacity-0 pointer-events-none transition-all duration-400"
+        >
+         <i class="fas fa-chevron-up"></i>
+       </a> -->
+     </button>
+      
     </main>
+      <a 
+         href="#"
+         id="toTop"
+         class="to-top fixed bottom-[16px] right-[32px] w-[50px] h-[50px] rounded-full flex items-end justify-end text-[32px] text-gray-700 opacity-0 pointer-events-none transition-all duration-400"
+        >
+         <i class="fas fa-chevron-up"></i>
+       </a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -775,6 +759,17 @@
 
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script>
+       const ScrollToTop = document.getElementById("toTop")
+       
+       window.addEventListener("scroll", () => {
+          if(window.scrollY > 200){
+            ScrollToTop.classList.add(".active");
+          }else{
+            ScrollToTop.classList.remove(".active");
+          }
+       });
     </script>
   </body>
 </html>
