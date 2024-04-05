@@ -28,6 +28,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+
     <title>NuTree</title>
   </head>
 
@@ -299,7 +306,8 @@
                     class="fa-solid fa-location-dot text-xl hover:text-[#17A600] transform duration-300"
                   ></i
                 ></span>
-                <a href="https://maps.app.goo.gl/hWzg3GHBgNN5bSLNA"
+                <a href="https://www.google.com/maps/place/N%C3%BA-tree+Smoothies+Cafe/@19.0435406,72.8936553,17.73z/data=!4m6!3m5!1s0x3be7c9006fde1fa5:0x690f61e6f68c2b9!8m2!3d19.0417738!4d72.8936927!16s%2Fg%2F11vwl9sh21?entry=ttu"
+                target="_blank"
                   >Shop no.3, Nityanand baug society, opp Navbharat
                   apartment,<br />
                   Mahul road, Chembur (E) Mumbai 400074</a
@@ -315,6 +323,7 @@
               <div class="flex flex-row gap-1">
                 <a
                   href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
                 >
                   <img
                     src="./assets/insta1.jpg"
@@ -324,6 +333,7 @@
                 </a>
                 <a
                   href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
                 >
                   <img
                     src="./assets/insta2.jpg"
@@ -333,6 +343,7 @@
                 </a>
                 <a
                   href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
                 >
                   <img
                     src="./assets/insta3.jpg"
@@ -344,6 +355,7 @@
               <div class="flex flex-row gap-1">
                 <a
                   href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
                 >
                   <img
                     src="./assets/insta4.jpg"
@@ -353,6 +365,7 @@
                 </a>
                 <a
                   href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
                 >
                   <img
                     src="./assets/insta5.jpg"
@@ -362,6 +375,7 @@
                 </a>
                 <a
                   href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
                 >
                   <img
                     src="./assets/insta6.jpg"
@@ -392,6 +406,7 @@
             <h2 class="text-white text-3xl flex gap-4">
               <span
                 ><a href="https://www.instagram.com/nutreesmoothies/"
+                   target="_blank"
                   ><i
                     class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
                   ></i></a
@@ -399,18 +414,21 @@
               <span
                 ><a
                   href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
+                  target="_blank"
                   ><i
                     class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
                   ></i></a
               ></span>
               <span
                 ><a href="https://wa.me/9324999109"
+                    target="_blank"
                   ><i
                     class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
                   ></i></a
               ></span>
               <span
                 ><a href="mailto:Nutreesmoothiess@gmail.com"
+                    target="_blank"
                   ><i
                     class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
                   ></i></a
@@ -427,6 +445,15 @@
         </div>
       </footer>
     </main>
+    <div>
+      <a
+        href="#"
+        id="toTop"
+        class="to-top fixed bottom-[16px] right-[32px] w-[50px] h-[50px] rounded-full flex items-center justify-center text-3xl text-white opacity-0 pointer-events-none transition-all duration-400 bg-[#17A600]"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
 
     <script>
       const viewMore = document.getElementById("view-btn");
@@ -488,6 +515,15 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+      });
+
+      const ScrollToTop = document.querySelector(".to-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          ScrollToTop.classList.add("active1");
+        } else {
+          ScrollToTop.classList.remove("active1");
+        }
       });
     </script>
   </body>
