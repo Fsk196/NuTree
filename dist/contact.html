@@ -421,6 +421,7 @@
       </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       const viewMore = document.getElementById("view-btn");
       const category = document.getElementById("category");
@@ -468,15 +469,7 @@
         },
       });
     </script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbySvtmIigbjyO74Js_0AqtZ0KAvgBrbanAu6ThqWNWzcOQZUpnR1SCCDTElxzu5t82l/exec";
@@ -487,12 +480,26 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "We got your response!!!";
-            setTimeout(() => {
-              msg.innerHTML = " ";
-            }, 4000);
-            form.reset();
+            if (response.ok) {
+              Swal.fire({
+                title: "Thanks for your feedback!",
+                text: "Your feedback is submitted successfully!",
+                icon: "success",
+                confirmButtonColor: "#17A600",
+              });
+              form.reset();
+            } else {
+              // Handle other response statuses here if needed
+              console.error("Error! Status:", response.status);
+            }
           })
+          //.then((response) => {
+          // msg.innerHTML = "We got your response!!!";
+          //setTimeout(() => {
+          // msg.innerHTML = " ";
+          // }, 4000);
+          // form.reset();
+          // })
 
           .catch((error) => console.error("Error!", error.message));
       });
