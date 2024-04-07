@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <main class="container mx-auto w-full overflow-hidden">
+    <main id="mainContainer" class="container mx-auto w-full overflow-hidden">
       <!-- Navbar  -->
       <section class="">
         <!-- Larger screen -->
@@ -235,7 +235,7 @@
       <section class="py-10 bg-slate-100 rounded-md">
         <div class="flex flex-col gap-10 justify-center">
           <div>
-            <h1
+            <h1 id="menu-mainTitle"
               class="flex justify-center font-medium text-3xl md:text-5xl text-[#17A600]"
             >
               Smoothies <span class="text-[#874900]">&nbsp;& Juices</span>
@@ -247,11 +247,13 @@
 
           <div class="menu1 flex flex-wrap justify-evenly menu">
             <div class="w-[400px] rounded-md flex flex-col items-center py-4">
-              <img
-                src="./assets/menuimg.png"
-                class="w-56 menu-img hover:scale-90 duration-300 transition ease-in-out"
-                alt="menu"
-              />
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="./assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium text-[#874900]">Kiwi Kiss</h2>
                 <p class="text-base text-center text-[#17A600] my-2">
@@ -266,11 +268,13 @@
               </div>
             </div>
             <div class="w-[400px] rounded-md flex flex-col items-center py-4">
-              <img
-                src="./assets/menuimg.png"
-                class="w-56 menu-img hover:scale-90 duration-300 transition ease-in-out"
-                alt="menu"
-              />
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="./assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium text-[#874900]">
                   Chicoo Chocoo
@@ -293,11 +297,13 @@
               </div>
             </div>
             <div class="w-[400px] rounded-md flex flex-col items-center py-4">
-              <img
-                src="./assets/menuimg.png"
-                class="w-56 menu-img hover:scale-90 duration-300 transition ease-in-out"
-                alt="menu"
-              />
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="./assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium text-[#874900]">
                   Tropical Twist
@@ -320,11 +326,13 @@
             class="menu2 transform duration-300 hidden sm:flex flex-wrap gap-y-10 gap-x-2 justify-evenly"
           >
             <div class="w-[400px] rounded-md flex flex-col items-center py-4">
-              <img
-                src="./assets/menuimg.png"
-                class="w-56 menu-img hover:scale-90 duration-300 transition ease-in-out"
-                alt="menu"
-              />
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="./assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium text-[#874900]">Grape Escape</h2>
                 <p class="text-base text-center text-[#17A600] my-2">
@@ -341,11 +349,13 @@
               </div>
             </div>
             <div class="w-[400px] rounded-md flex flex-col items-center py-4">
-              <img
-                src="./assets/menuimg.png"
-                class="w-56 menu-img hover:scale-90 duration-300 transition ease-in-out"
-                alt="menu"
-              />
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="./assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium text-[#874900]">Mango Smurf</h2>
                 <p class="text-base text-center text-[#17A600] my-2">
@@ -363,11 +373,13 @@
               </div>
             </div>
             <div class="w-[400px] rounded-md flex flex-col items-center py-4">
-              <img
-                src="./assets/menuimg.png"
-                class="w-56 menu-img hover:scale-90 duration-300 transition ease-in-out"
-                alt="menu"
-              />
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="./assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
               <div class="flex items-center my-2 flex-col">
                 <h2 class="text-xl font-medium text-[#874900]">
                   Blueberry Burst
@@ -732,6 +744,15 @@
       //gsap.registerPlugin(ScrollTrigger);
 
       const bannerTitle = document.getElementsByClassName("bannerTitle");
+      const MenuTitle = document.getElementById("menu-mainTitle")
+      const MainCont = document.getElementById("mainContainer")
+
+      gsap.from(MainCont, {
+        opacity: 0,
+        delay: 0.2,
+        duration: 1,
+        ease: "power1.in",
+      })
 
       gsap.from(bannerTitle, {
         scrollTrigger: ".banner",
@@ -751,18 +772,23 @@
 
       gsap.from(".bannerImg", {
         scrollTrigger: ".banner",
-        x: -100,
-        delay: 1,
+        x: 100,
         opacity: 0,
         duration: 0.8,
         ease: "power1.in",
       });
 
+      gsap.from(MenuTitle, {
+        scrollTrigger: ".menu",
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power1.in",
+      })
+
       gsap.from(".menu-img", {
         scrollTrigger: ".menu",
-        x: -100,
-        delay: 1,
-        duration:2,
+        duration: 2,
         opacity: 0,
         duration: 0.8,
         ease: "power3.in",
@@ -771,11 +797,10 @@
       gsap.from(".menu-para", {
         scrollTrigger: ".menu",
         x: 100,
-        delay: 1,
         opacity: 0,
         duration: 0.8,
         ease: "bounce.inOut",
-      })
+      });
     </script>
     <script>
       const scriptURL =
