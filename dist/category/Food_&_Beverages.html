@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/f0ed730e25.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/98a179a0c5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <title>Nutree</title>
+  </head>
+
+  <body>
+    <main class="container mx-auto w-full">
+      <!-- Navbar  -->
+      <section class="">
+        <!-- Larger screen -->
+        <nav
+          class="h-16 shadow-md rounded-md sm:flex justify-center gap-4 items-center hidden"
+        >
+          <ul
+            class="flex text-lg text-[#874900] font-medium items-center gap-10 cursor-pointer"
+          >
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../index.html">Home</a>
+            </li>
+            <!-- <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="./menu.html">Menu</a>
+            </li> -->
+            <li class="cursor-pointer">
+              <button id="category" class="hover:text-[#17A600]">
+                <!-- <h2>Category</h2> -->
+                Menu <i class="fa-solid fa-caret-down"></i>
+              </button>
+
+              <div
+                class="absolute hidden z-10 flex flex-col bg-white py-2 rounded-md gap-2 dropdown-menu"
+              >
+                <a
+                  href="./smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+                <a
+                  href="./Food_&_Beverages.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Food & Beverages</a
+                >
+                <!-- <a
+                  href="./Tea_&_Coffee.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Tea & Coffee</a
+                > -->
+              </div>
+            </li>
+          </ul>
+          <div>
+            <a href="./index.html"
+              ><img
+                src="../assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <ul
+              class="flex text-lg text-[#874900] font-medium items-center gap-10"
+            >
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="../blog.html">Blog</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="../aboutus.html">About Us</a>
+              </li>
+              <li class="hover:text-[#17A600] cursor-pointer">
+                <a href="../contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile Screen Navbar  -->
+        <nav
+          class="h-16 shadow-md rounded-md flex justify-between px-4 items-center sm:hidden"
+        >
+          <div>
+            <a href="../index.html"
+              ><img
+                src="../assets/logo1.png"
+                class="w-20 cursor-pointer"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <h2 id="icon1">
+              <i class="fa-solid fa-bars text-[#874900] text-xl hamburger"></i>
+            </h2>
+            <h2 id="icon2" class="hidden">
+              <i
+                class="fa-solid fa-xmark text-[#874900] text-2xl hamburger1"
+              ></i>
+            </h2>
+          </div>
+        </nav>
+
+        <div
+          class="absolute bg-white w-screen h-fit hidden flex justify-center text-xl my-2 p-7 sm:hidden navbar transform duration-700 overflow-hidden"
+        >
+          <ul class="flex flex-col gap-4 text-center">
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../index.html">Home</a>
+            </li>
+            <!-- <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../menu.html">Menu</a>
+            </li> -->
+            <li class="cursor-pointer">
+              <button id="category2" class="hover:text-[#17A600]">
+                Menu <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div
+                class="flex flex-col bg-white py-2 rounded-md gap-2 subnav hidden transform duration-500"
+              >
+                <a
+                  href="./smoothies.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothies</a
+                >
+                <a
+                  href="./smoothiebowl.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Smoothie Bowl</a
+                >
+                <a
+                  href="./juices.html"
+                  class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                  >Juices</a
+                >
+                <a
+                href="./Food_&_Beverages.html"
+                class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                >Food & Beverages</a
+               >
+               <!-- <a
+                href="./Tea_&_Coffee.html"
+                class="hover:text-white hover:bg-[#17A600] px-2 py-2"
+                >Tea & Coffee</a
+                > -->
+              </div>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../aboutus.html">About Us</a>
+            </li>
+            <li class="hover:text-[#17A600] cursor-pointer">
+              <a href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Hero section  -->
+
+      <!-- Hero section  -->
+
+      <section class="my-4">
+        <div class="">
+          <img src="../assets/Nutree_Photos/tuna.JPG" class="w-full rounded-md" alt="" />
+        </div>
+      </section>
+
+      <!-- Category Section  -->
+
+      <section class="my-10 bg-slate-100 py-5 rounded-md">
+        <div class="flex justify-center items-center my-2">
+          <h2 class="text-4xl sm:text-5xl font-semibold text-[#863A29]">
+            SANDWICHES & BEVERAGES
+          </h2>
+        </div>
+        <!-- Buttons -->
+        <div class="flex justify-center gap-4">
+          <button
+            id="smoothiesBtn"
+            class="cat-btn sm:text-xl text-base active text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Sandwiches
+          </button>
+          <button
+            id="smoothieBowlBtn"
+            class="cat-btn sm:text-xl text-base text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Coffee 
+          </button>
+          <button
+            id="juicesBtn"
+            class="cat-btn sm:text-xl text-base text-[#17A600] hover:text-[#863A29] font-medium"
+          >
+            Tea
+          </button>
+        </div>
+
+        <!-- categories -->
+        <!-- SANDWICHES -->
+        <div id="smoothies" class="flex justify-center my-10">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-7 gap-x-10"
+          >
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Sandwiches/tandori.JPG"
+                  class="w-56 menu-img hover:scale-125 duration-500 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Tandoori style
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Tandoori sauce + mayo + garlic + chilly + lime juice + onion + tomato + capsicum + grilled multi grain bread + cheese)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Sandwiches/peri peri.JPG"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Peri-Peri style
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Paprika + mayo + hot sauce + onion + tomato + capsicum + grilled multi grain bread + cheese)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                 
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Sandwiches/chipotale.JPG"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Chipotle style
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Chipotle sauce + mayo + garlic + chilly + onion + tomato + capsicum + grilled multi grain bread + cheese)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                 
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Sandwiches/bbq.JPG"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  BBQ style
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Barbecue sauce + charcoal smoke + mayo + onion + tomato + capsicum + grilled multi grain bread + cheese)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600]">
+                  Achari style
+                </h2>
+                <p class="text-base text-center  text-[#874900] my-2">
+                  (Pickle + Spices + coriander + mint + garlic + lime juice + onion + tomato + capsicum + grilled multi grain bread + cheese)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Bombae style Sandwich
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Potato + onion + capsicum + tomato + cucumber + butter + green chutney + grilled multi grain bread)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Nutella Sandwich
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Cacao powder + peanut + bread)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Sandwiches/egg.JPG"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Egg Sandwich
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Egg + butter + salt + mayo + sweet onion sauce + chilly + cheese + grilled multi grain bread)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Cheesey Corn Sandwich
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Corn + Cheese + mayo + herbs + spices)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Sandwiches/tuna.JPG"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600] ">
+                  Tuna Sandwich
+                </h2>
+                <p class="text-base text-center text-[#874900] my-2">
+                  (Tuna + mayo + cheese + onion + capsicum)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- COFFEE -->
+        <div id="smoothie-bowl" class="flex justify-center my-10 hidden">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-7 gap-x-10"
+          >
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Coffee/classic.jpg"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600]">
+                  Classic Coffee
+                </h2>
+                <p class="text-base text-center  text-[#874900] my-2">
+                  (Chicoo + Cacao Powder + Cashew + banana + Dates + Milk of
+                  Choice)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  <!-- Your delightfully Chocolate flavour get a healthy twist in our
+                  chicoo chocoo smoothie bowl where creamy chicoo pairs
+                  perfectly with unsweetened cacao powder, creating a decadent
+                  base enriched with antioxidants and natural sweetness. Topped
+                  with luscious banana slices, crunchy cashews, and sweet dates,
+                  each spoonful is a symphony of flavors and textures. Finished
+                  with a drizzle of your choice of milk, this nourishing bowl is
+                  the ultimate treat for both your taste buds and your
+                  well-being. -->
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Coffee/ice american.jpg"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600]">
+                  Ice American
+                </h2>
+                <p class="text-base text-center  text-[#874900] my-2">
+                  (Mango, Banana, Blue Spirulina, Milk)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  <!-- Get lost in the enchanting world of our seasonal delight, the
+                  "Mango Smurf" blue smoothie bowl. Crafted with ripe mangoes,
+                  creamy bananas, and a touch of superfood blue spirulina, all
+                  blended to perfection with your choice of milk. Indulge in the
+                  vibrant hues and tropical flavors of this magical creation,
+                  guaranteed to transport your taste buds to blue skies and
+                  sunny shores. -->
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Coffee/ice blue macha.jpg"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600]">
+                  Ice Blue Mocha
+                </h2>
+                <p class="text-base text-center  text-[#874900] my-2">
+                  (Mango + Pineapple + Banana + Milk)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  <!-- Indulge in our revitalizing "Yellow Yoga" smoothie, a
+                  harmonious blend of ripe mangoes, tangy pineapples, and creamy
+                  bananas, fused with the velvety richness of milk. Energize
+                  your day with this tropical delight, brimming with vitamins
+                  and flavors unlike you ever savoured before. -->
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/Product_Photos/NuTree_Coffee/mocha.jpg"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#17A600]">
+                  Mocha
+                </h2>
+                <p class="text-base text-center  text-[#874900] my-2">
+                  (Mango + Pineapple + Banana + Milk)
+                </p>
+                <!-- <p class="text-base text-center text-[#874900] my-2">
+                  (Papaya + Cashew + Blue spirulina + Cashewnuts + Milk)
+                </p> -->
+                <p class="text-base text-center text-slate-600">
+                  <!-- To all the gymoholic rats who love banana and simply can’t
+                  resist spoonful of peanut butter daily, here is a simple blend
+                  of fibre rich banana with the creamier unsweetened peanut
+                  butter with your choice of milk, nuts and seeds makes it an
+                  unapologetic favourite. It’s thick consistency and rich
+                  flavours are surely going to fill your tummy for long. -->
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Yellow Fever Smoothie Bowl
+                </h2>
+                <!-- <p class="text-base text-center text-[#874900] my-2">
+                  (Papaya + Cashew + Blue spirulina + Cashewnuts + Milk)
+                </p> -->
+                <p class="text-base text-center text-slate-600">
+                  Experience the vibrant burst of tropical flavors with our
+                  Yellow Fever Smoothie Bowl. A tantalizing blend of ripe
+                  mangoes, creamy bananas, crisp apples, and succulent papaya
+                  creates a luscious base that transports you to sun-soaked
+                  shores with every spoonful. Choose your favorite milk to
+                  achieve the perfect creamy consistency, then top it off with a
+                  sprinkle of seeds and nuts of your choice for added crunch and
+                  nutrition
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Deadly Dragonfruit Smoothie Bowl
+                </h2>
+                <!-- <p class="text-base text-center text-[#874900] my-2">
+                  (Papaya + Cashew + Blue spirulina + Cashewnuts + Milk)
+                </p> -->
+                <p class="text-base text-center text-slate-600">
+                  Dragonfruit Smoothie Bowl. Vibrant pink dragonfruit takes
+                  center stage, complemented by creamy bananas and crisp apples,
+                  all blended to perfection with your choice of milk. Customize
+                  your bowl with a selection of nuts and seeds to add a
+                  satisfying crunch and boost of nutrition. Indulge in this
+                  vibrant and refreshing creation that will invigorate your
+                  senses and tantalize your taste buds with every spoonful
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Piña-Colada Smoothie Bowl
+                </h2>
+                <!-- <p class="text-base text-center text-[#874900] my-2">
+                  (Papaya + Cashew + Blue spirulina + Cashewnuts + Milk)
+                </p> -->
+                <p class="text-base text-center text-slate-600">
+                  Transport yourself to a tropical paradise with our Piña-Colada
+                  Smoothie Bowl. A harmonious blend of creamy bananas, tangy
+                  pineapple, and luscious coconut meat, sweetened with a touch
+                  of honey and coconut water. Customize your bowl with your
+                  choice of milk for added creaminess, and top it off with a
+                  selection of nuts and seeds for a satisfying crunch. Dive into
+                  the refreshing flavors of the Caribbean and let this exotic
+                  bowl whisk you away
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Crazy Coconut Vanilla Smoothie Bowl
+                </h2>
+                <!-- <p class="text-base text-center text-[#874900] my-2">
+                  (Papaya + Cashew + Blue spirulina + Cashewnuts + Milk)
+                </p> -->
+                <p class="text-base text-center text-slate-600">
+                  Get ready for a taste sensation with our Crazy Coconut Vanilla
+                  Smoothie Bowl. Creamy coconut flesh and ripe bananas come
+                  together in perfect harmony, blended with luscious coconut
+                  milk and a hint of aromatic vanilla essence. Dive into this
+                  tropical delight, bursting with rich coconut flavor and a
+                  touch of sweet vanilla. Topped with your favorite toppings for
+                  added texture and crunch, it's the perfect way to start your
+                  day or indulge in a guilt-free treat.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  CBerry Berry Good Smoothie Bowl
+                </h2>
+                <!-- <p class="text-base text-center text-[#874900] my-2">
+                  (Papaya + Cashew + Blue spirulina + Cashewnuts + Milk)
+                </p> -->
+                <p class="text-base text-center text-slate-600">
+                  Embark on a berrylicious journey with our Berry Berry Good
+                  Smoothie Bowl. Bursting with the natural sweetness of ripe
+                  bananas and a delightful mix of mixed berries including
+                  succulent strawberries, exotic mulberries, and plump
+                  blueberries, this bowl is a true celebration of berry
+                  goodness. Customize your creation with your choice of milk for
+                  the perfect creamy consistency, and top it off with a
+                  selection of nuts and seeds for added texture and nutrition.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TEA's -->
+        <div id="juices" class="flex justify-center my-10 hidden">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-7 gap-x-10"
+          >
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Kiwi Kiss
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  (kiwi + pineapple + Green Grapes)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  This delightful blend features the exotic tang of kiwi, the
+                  sweet juiciness of pineapple, and the crisp bite of green
+                  grapes. Each sip is a journey to paradise, offering a
+                  refreshing escape from the ordinary.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Tropical Twist
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  (Pineapple + Orange + Ice + Mint )
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Dive into a refreshing blend of juicy pineapple, tangy orange,
+                  and crisp mint, all served over a bed of ice for the ultimate
+                  cool-down experience. This vibrant concoction is like a
+                  vacation in a glass.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Kyu Cumber?
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  ( Cucumber, Orange, Lime, Ice)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Beat the heat in style with our invigorating summer cooler
+                  ‘Kyu Cumber?’ fusion of cool cucumber, Zingy Orange and lusty
+                  lime. Delight in the crispness of cucumber complemented by the
+                  citrusy zest, making every sip a rejuvenating experience.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Grape Escape
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  (Green grapes, Black Grapes, Ice )
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Embark on a summer-scape with our signature cooler called the
+                  "Grape Escape." So come dive into a refreshing blend of crisp
+                  green grapes and luscious black grapes, served over ice to
+                  deliver a burst of coolness with every sip. Embark on a
+                  journey of grape-infused delight and let this invigorating
+                  concoction transport you to a world of pure refreshment.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  B-Granade
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  ( Strawberry+ Pomegranate + Ice)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Explode your taste-buds with our scintillating cooler, the
+                  "B-granade." Bursting with the explosive flavors of ripe
+                  strawberries and tangy pomegranate, served over ice for an
+                  extra chill. Dive into a symphony of fruity goodness that will
+                  tantalize your taste buds and leave you feeling refreshed and
+                  revitalized.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Sunrise Sunset
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  (Pineapple, Pomegrante, ginger, Ice in two separate layers)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Introducing our dual-layered thirst quencher, the "Sunrise and
+                  Sunset" cooler, a harmonious fusion of tropical flavors and
+                  refreshing zest. In the Sunrise layer, savor the sweet tang of
+                  pineapple, while the Sunset layer awakens your senses with the
+                  burst of juicy pomegranate. Each layer is meticulously crafted
+                  to perfection with a kick of ginger and served over ice for an
+                  extra chill.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Melon Explosion
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  (Watermelon + strawberry+ Lemon Juice + Mint)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Savor the taste of summer with our "Melon Explosion" cooler, a
+                  refreshing blend of sweet watermelon, succulent strawberries,
+                  zesty lemon juice, and a hint of cool mint. This invigorating
+                  concoction is the perfect antidote to scorching summer days.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+            <div class="w-[325px] rounded-md flex flex-col items-center">
+              <div class="w-56 overflow-hidden rounded-md">
+                <img
+                  src="../assets/menuimg.png"
+                  class="w-56 menu-img hover:scale-125 duration-150 transition ease-in-out"
+                  alt="menu"
+                />
+              </div>
+              <div class="flex items-center my-2 flex-col">
+                <h2 class="text-xl text-center font-medium my-2 text-[#874900]">
+                  Mango Tango
+                </h2>
+                <p class="text-base text-center text-[#17A600] my-2">
+                  (Mango + Orange + Ice)
+                </p>
+                <p class="text-base text-center text-slate-600">
+                  Introducing our exclusive"Mango Tango" summer cooler, a
+                  tantalizing fusion of ripe mango and zesty orange, served over
+                  a refreshing bed of ice. Dive into a symphony of tropical
+                  flavors as you sip on this delightful concoction, perfectly
+                  crafted to beat the summer heat.
+                </p>
+                <button
+                class="hover:shadow-form rounded-md bg-[#17A600] py-3 px-8 mt-2 text-base font-semibold text-white outline-none"
+                >
+                <a href="https://www.instagram.com/nutreesmoothies/"
+                target="_blank"
+                >Order Now
+                </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer
+        class="mx-auto bg-[#863A29] flex justify-center items-center flex-col text-white"
+      >
+        <div
+          id="top"
+          class="flex flex-col lg:flex-row gap-5 sm:gap-8 md:gap-12 lg:gap-16 py-10 justify-center"
+        >
+          <div class="flex flex-col gap-4 px-2 items-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Dont be shy, say HI!
+            </h2>
+            <div class="my-2 flex flex-col gap-2 justify-center w-full">
+              <h3 class="text-1xl flex gap-3">
+                <span
+                  ><i
+                    class="fa-solid fa-phone text-xl hover:text-[#17A600] transform duration-300"
+                  ></i
+                ></span>
+                9324999109
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span
+                  ><i
+                    class="fa-solid fa-clock text-xl hover:text-[#17A600] transform duration-300"
+                  ></i
+                ></span>
+                EveryDay - Sat 10.00 - 10.00
+              </h3>
+              <h3 class="text-1xl flex gap-3">
+                <span
+                  ><i
+                    class="fa-solid fa-location-dot text-xl hover:text-[#17A600] transform duration-300"
+                  ></i
+                ></span>
+                <a href="https://www.google.com/maps/place/N%C3%BA-tree+Smoothies+Cafe/@19.0435406,72.8936553,17.73z/data=!4m6!3m5!1s0x3be7c9006fde1fa5:0x690f61e6f68c2b9!8m2!3d19.0417738!4d72.8936927!16s%2Fg%2F11vwl9sh21?entry=ttu"
+                target="_blank"
+                >Shop no.3, Nityanand baug society, opp Navbharat
+                  apartment,<br />
+                  Mahul road, Chembur (E) Mumbai 400074</a
+                >
+              </h3>
+            </div>
+          </div>
+
+          <div id="opening-hour" class="flex flex-col items-center gap-3">
+            <h2 class="text-2xl sm:text-3xl font-semibold"></h2>
+
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-row gap-1">
+                <a
+                  href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/insta1.jpg"
+                    alt="insta1"
+                    class="w-28 h-28 hover:scale-75 transition duration-300"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/insta2.jpg"
+                    alt="insta1"
+                    class="w-28 h-28 hover:scale-75 transition duration-300"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/insta3.jpg"
+                    alt="insta1"
+                    class="w-28 h-28 hover:scale-75 transition duration-300"
+                  />
+                </a>
+              </div>
+              <div class="flex flex-row gap-1">
+                <a
+                  href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/insta4.jpg"
+                    alt="insta1"
+                    class="w-28 h-28 hover:scale-75 transition duration-300"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/insta5.jpg"
+                    alt="insta1"
+                    class="w-28 h-28 hover:scale-75 transition duration-300"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/nutreesmoothies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/insta6.jpg"
+                    alt="insta1"
+                    class="w-28 h-28 hover:scale-75 transition duration-300"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="footer-right" class="flex-col flex items-center">
+            <h2 class="text-4xl font-semibold">Get in touch</h2>
+            <a href="contact.html"
+              ><h3 class="text-xl pt-1 hover:text-[#17A600]">Contact us</h3></a
+            >
+            <a href="aboutus.html"
+              ><h3 class="text-xl pt-1 hover:text-[#17A600]">About</h3></a
+            >
+            <a href="blog.html"
+              ><h3 class="text-xl pt-1 hover:text-[#17A600]">Blogs</h3></a
+            >
+          </div>
+        </div>
+        <div>
+          <div id="socials" class="p-2">
+            <!----- socials------>
+            <h2 class="text-white text-3xl flex gap-4">
+              <span
+                ><a href="https://www.instagram.com/nutreesmoothies/"
+                    target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram hover:text-[#17A600] transform duration-300"
+                  ></i></a
+              ></span>
+              <span
+                ><a
+                  href="https://www.facebook.com/people/N%C3%BAtree-smoothies/61556750687240/"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-square-facebook hover:text-[#17A600] transform duration-300"
+                  ></i></a
+              ></span>
+              <span
+                ><a href="https://wa.me/9324999109"
+                    target="_blank"
+                  ><i
+                    class="fa-brands fa-whatsapp hover:text-[#17A600] transform duration-300"
+                  ></i></a
+              ></span>
+              <span
+                ><a href="mailto:Nutreesmoothiess@gmail.com"
+                    target="_blank"
+                  ><i
+                    class="fa-regular fa-envelope hover:text-[#17A600] transform duration-300"
+                  ></i></a
+              ></span>
+            </h2>
+          </div>
+        </div>
+
+        <div id="copyright" class="flex items-center justify-center">
+          <p class="text-[13px]">
+            <span><i class="fa-regular fa-copyright"></i></span>
+            2024 Nutree Smoothies, All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <div>
+      <a
+        href="#"
+        id="toTop"
+        class="to-top fixed bottom-[16px] right-[32px] w-[50px] h-[50px] rounded-full flex items-center justify-center text-3xl text-white opacity-0 pointer-events-none transition-all duration-400 bg-[#17A600]"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <script>
+      const viewMore = document.getElementById("view-btn");
+      const category = document.getElementById("category");
+      const category2 = document.getElementById("category2");
+      const hamburgerMenu = document.querySelector(".hamburger");
+      const hamburgerMenu1 = document.querySelector(".hamburger1");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
+
+      const catBtns = document.querySelectorAll(".cat-btn");
+      // buttons
+      const smoothiesBtn = document.getElementById("smoothiesBtn");
+      const smoothieBowlBtn = document.getElementById("smoothieBowlBtn");
+      const juicesBtn = document.getElementById("juicesBtn");
+      // Categories
+      const smoothiesCat = document.getElementById("smoothies");
+      const smoothieBowl = document.getElementById("smoothie-bowl");
+      const juices = document.getElementById("juices");
+
+      catBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (document.querySelector(".active")) {
+            document.querySelector(".active").classList.remove("active");
+          }
+          btn.classList.add("active");
+        });
+      });
+
+      smoothiesBtn.addEventListener("click", () => {
+        smoothiesCat.classList.remove("hidden");
+        smoothieBowl.classList.add("hidden");
+        juices.classList.add("hidden");
+      });
+
+      smoothieBowlBtn.addEventListener("click", () => {
+        smoothiesCat.classList.add("hidden");
+        smoothieBowl.classList.remove("hidden");
+      });
+
+      juicesBtn.addEventListener("click", () => {
+         smoothiesCat.classList.add("hidden");
+         smoothieBowl.classList.add("hidden");
+         juices.classList.remove("hidden");
+       });
+
+      const toggleView = () => {
+        const menu2 = document.getElementById("menu2");
+        if (menu2.classList.contains("hidden")) {
+          menu2.classList.remove("hidden");
+          menu2.classList.add("flex");
+          viewMore.textContent = "View Less";
+          console.log("Text changed to 'View Less'");
+        } else {
+          menu2.classList.remove("flex");
+          menu2.classList.add("hidden");
+          viewMore.textContent = "View More";
+          console.log("Text changed to 'View More'");
+        }
+      };
+
+      category.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("hidden");
+        console.log("button toggled");
+      });
+
+      category2.addEventListener("click", () => {
+        let dropdownMenu = document.querySelector(".subnav");
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      icon1.addEventListener("click", () => {
+        icon1.classList.add("hidden");
+        icon2.classList.remove("hidden");
+      });
+
+      icon2.addEventListener("click", () => {
+        icon1.classList.remove("hidden");
+        icon2.classList.add("hidden");
+      });
+
+      hamburgerMenu.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+      hamburgerMenu1.addEventListener("click", () => {
+        let navbarToggler = document.querySelector(".navbar");
+        navbarToggler.classList.toggle("hidden");
+      });
+
+      const ScrollToTop = document.querySelector(".to-top");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          ScrollToTop.classList.add("active1");
+        } else {
+          ScrollToTop.classList.remove("active1");
+        }
+      });
+    </script>
+  </body>
+</html>
